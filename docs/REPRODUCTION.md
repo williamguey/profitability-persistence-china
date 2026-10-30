@@ -1,6 +1,6 @@
 # Full reproduction guide
 
-These materials accompany *Profitability Persistence and Accounting Information in Chinese Firms*. This repository contains the scientific contents of the prepared `profitability-reproduction.zip` ancillary attachment, with repository documentation added. Run every command below from the repository root. No paper DOI or arXiv identifier is assigned here.
+These materials accompany *Profitability Persistence and Accounting Information in Chinese Firms*. The reproduction code, aggregate results and figure materials are distributed through this GitHub repository only. Run every command below from the repository root. No paper DOI or arXiv identifier is assigned here.
 
 The package contains Python analysis code, pinned dependencies, method configurations, aggregate outputs, five illustrated figures with their aggregate plotting inputs, and six explicitly cited public annual-report cases. The full previously audited analysis bundle is retained for transparency, including later diagnostics not all used in this econ.GN revision. Its later table builder and historical paper mapping are identified below. No manuscript or TeX source, source workbook, original R source file, private worksheet, individual forecast, eligible-pair record, fitted-model record, optimality certificate, private correspondence or review is distributed.
 
@@ -35,7 +35,7 @@ After reproducing both primary pipelines and running `code/describe_original.py`
 
 The full analysis commands below create local company-level intermediates, predictions and fitted-model records. These are excluded from the distributed archive and must not be mistaken for redistributable package content. The six public annual-report cases in `source/construct-check/` are the only distributed company-level source table, with citations and page locators.
 
-`config/environment.json` records the runtime; `config/forecast_design.json` and the other method files specify the primary analysis and extended diagnostics. `config/source-checksums.json` records the original code and source provenance. `base-package-validation.json` preserves the historical audit of the 176-file base bundle; `ancillary-validation.json` describes the 196-file ancillary attachment from which this repository was prepared. `MANIFEST.sha256` covers all distributed files except itself. Pinned dependencies include NumPy, pandas, SciPy/HiGHS, Matplotlib, openpyxl, statsmodels and pypdf. No R installation, API key or AI service is needed. A fresh network installation was not rerun for this attachment.
+`config/environment.json` records the runtime; `config/forecast_design.json` and the other method files specify the primary analysis and extended diagnostics. `config/source-checksums.json` records the original code and source provenance. `base-package-validation.json` preserves the historical audit of the 176-file base bundle; `ancillary-validation.json` describes the 196-file ancillary attachment from which this repository was prepared. `MANIFEST.sha256` covers all distributed files except itself. Pinned dependencies include NumPy, pandas, SciPy/HiGHS, Matplotlib, openpyxl, statsmodels and pypdf. No R installation, API key or AI service is needed. A fresh network installation was not rerun for this repository release.
 
 ## Public panel: download and estimate
 
