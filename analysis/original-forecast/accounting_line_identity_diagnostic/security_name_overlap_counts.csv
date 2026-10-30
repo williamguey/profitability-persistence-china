@@ -1,0 +1,5 @@
+scope,rows,security_codes,nonmissing_company_name_strings,company_name_categories_including_missing,missing_company_names_n,names_with_multiple_codes,codes_using_shared_names,rows_using_shared_names,same_year_shared_name_groups,same_year_shared_name_rows,same_year_shared_name_codes
+all_source,34799,4445,4441,4442,5,3,6,36,9,18,4
+finite_roe_source,33061,4336,4334,4334,0,2,4,28,6,12,4
+all_eligible_origins,28035,3774,3773,3773,0,1,2,14,4,8,2
+main_2015_2019_origins,15258,3542,3542,3542,0,0,0,0,0,0,0

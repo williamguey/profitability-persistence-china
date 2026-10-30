@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14",
+  "platform_note": "Original estimates were generated with Python 3.12 on macOS; HiGHS is supplied by scipy.optimize.linprog.",
+  "direct_dependencies": [
+    "numpy",
+    "pandas",
+    "scipy",
+    "matplotlib",
+    "openpyxl",
+    "statsmodels"
+  ],
+  "new_diagnostics_add_dependencies": false,
+  "illustrated_figure_dependency": "pypdf==6.10.0 (vector-PDF validation only)"
+}

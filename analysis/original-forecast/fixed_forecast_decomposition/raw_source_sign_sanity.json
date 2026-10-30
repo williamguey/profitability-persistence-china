@@ -1,0 +1,9 @@
+{
+  "raw_rows": 34799,
+  "joint_finite_roe_netprofit_rows": 33061,
+  "joint_finite_three_way_sign_disagreements": 0,
+  "negative_roe_and_negative_netprofit_rows": 3378,
+  "zero_roe_joint_finite_rows": 0,
+  "zero_netprofit_joint_finite_rows": 0,
+  "meaning": "Observed sign correspondence only; no equity, denominator, legal status or cause inferred."
+}

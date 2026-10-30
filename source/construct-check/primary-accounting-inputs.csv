@@ -1,0 +1,7 @@
+stock_code,company,year,monetary_unit,net_income_attributable,opening_equity_attributable,closing_equity_attributable,total_liabilities,reported_weighted_roe_pct,report_file,roe_pdf_pages,debt_pdf_pages
+000982,Ningxia Zhongyin Cashmere,2018,CNY,-2983039111.45,1906961098.75,-1066432993.23,9445770213.40,-718.04,zhongyin-2019-annual-report.pdf,6;7,96
+000982,Ningxia Zhongyin Cashmere,2019,CNY,-2731990945.60,-1066432993.23,1100961799.50,163674301.73,116.30,zhongyin-2019-annual-report.pdf,6;7,96
+000002,China Vanke,2018,CNY,33772651678.61,132675315293.33,155764131544.43,1292958626477.23,23.24,vanke-2019-annual-report.pdf,10,10
+000002,China Vanke,2019,CNY,38872086881.32,155764131544.43,188058491912.82,1459350334988.27,22.47,vanke-2019-annual-report.pdf,10,10
+000001,Ping An Bank,2018,CNY_million,24818,222054,240042,3178550,11.49,pingan-bank-2019-annual-report.pdf,19,134
+000001,Ping An Bank,2019,CNY_million,28195,240042,312983,3626087,11.30,pingan-bank-2019-annual-report.pdf,19,134

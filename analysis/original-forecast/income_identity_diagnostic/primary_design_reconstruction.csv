@@ -1,0 +1,7 @@
+target_year,prediction_reconstruction_max_error,full_design_columns_including_intercept,full_design_rank_tol_1e_9,retained_columns,dropped_columns,all_four_income_components_retained
+2015,2.4868995751603507e-14,14,14,roe_pct;x1;x2;x3;x4;x5;x6;x7;x8;negative_roe;roe_x_negative;x7_missing;x8_missing,,True
+2016,1.7763568394002505e-14,14,14,roe_pct;x1;x2;x3;x4;x5;x6;x7;x8;negative_roe;roe_x_negative;x7_missing;x8_missing,,True
+2017,1.4210854715202004e-14,14,14,roe_pct;x1;x2;x3;x4;x5;x6;x7;x8;negative_roe;roe_x_negative;x7_missing;x8_missing,,True
+2018,2.1316282072803006e-14,15,15,roe_pct;x1;x2;x3;x4;x5;x6;x7;x8;negative_roe;roe_x_negative;x6_missing;x7_missing;x8_missing,,True
+2019,1.4210854715202004e-14,16,16,roe_pct;x1;x2;x3;x4;x5;x6;x7;x8;negative_roe;roe_x_negative;x1_missing;x6_missing;x7_missing;x8_missing,x4_missing,True
+2020,2.1316282072803006e-14,16,16,roe_pct;x1;x2;x3;x4;x5;x6;x7;x8;negative_roe;roe_x_negative;x1_missing;x6_missing;x7_missing;x8_missing,x4_missing,True

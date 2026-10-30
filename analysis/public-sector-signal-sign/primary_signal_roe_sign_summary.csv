@@ -1,0 +1,13 @@
+scope,signal,roe_group,group_n,finite_positive_assets_ratio_n,missing_ratio_n,same_sign_n,different_sign_n,same_sign_pct
+main_evaluation_2015_2019,net_profit_over_assets,all,15258,15258,0,15258,0,100.0
+main_evaluation_2015_2019,net_profit_over_assets,negative_roe,1520,1520,0,1520,0,100.0
+main_evaluation_2015_2019,net_profit_over_assets,nonnegative_roe,13738,13738,0,13738,0,100.0
+main_evaluation_2015_2019,operating_profit_over_assets,all,15258,15258,0,14600,658,95.68750819242365
+main_evaluation_2015_2019,operating_profit_over_assets,negative_roe,1520,1520,0,1445,75,95.06578947368422
+main_evaluation_2015_2019,operating_profit_over_assets,nonnegative_roe,13738,13738,0,13155,583,95.75629640413452
+all_eligible_origins,net_profit_over_assets,all,28035,28035,0,28035,0,100.0
+all_eligible_origins,net_profit_over_assets,negative_roe,2661,2661,0,2661,0,100.0
+all_eligible_origins,net_profit_over_assets,nonnegative_roe,25374,25374,0,25374,0,100.0
+all_eligible_origins,operating_profit_over_assets,all,28035,28035,0,26738,1297,95.37364009274121
+all_eligible_origins,operating_profit_over_assets,negative_roe,2661,2661,0,2542,119,95.52799699361142
+all_eligible_origins,operating_profit_over_assets,nonnegative_roe,25374,25374,0,24196,1178,95.35745251044376

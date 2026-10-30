@@ -1,0 +1,132 @@
+{
+  "roe_pct": {
+    "zero_rows": 98,
+    "securities_with_zeros": 31,
+    "zero_rows_by_source_year": {
+      "2009": 31,
+      "2010": 26,
+      "2011": 21,
+      "2012": 14,
+      "2013": 6
+    },
+    "securities_by_number_of_zero_years": {
+      "1": 5,
+      "2": 5,
+      "3": 7,
+      "4": 8,
+      "5": 6
+    },
+    "securities_whose_zero_spell_is_consecutive": 31,
+    "securities_whose_first_zero_is_2009": 31,
+    "negative_debt_ratio_source_at_zero": 80,
+    "zero_profit_growth_at_zero": 0,
+    "nonzero_profit_growth_at_zero": 98,
+    "zero_revenue_growth_at_zero": 7,
+    "zero_pe_source_at_zero": 18,
+    "raw_xlsx_cell_type_value_counts": [
+      {
+        "cell_type": "n",
+        "raw_value_repr": "0",
+        "count": 98
+      }
+    ]
+  },
+  "sell_margin_pct": {
+    "zero_rows": 614,
+    "securities_with_zeros": 83,
+    "zero_rows_by_source_year": {
+      "2009": 34,
+      "2010": 41,
+      "2011": 42,
+      "2012": 40,
+      "2013": 39,
+      "2014": 41,
+      "2015": 44,
+      "2016": 55,
+      "2017": 62,
+      "2018": 72,
+      "2019": 73,
+      "2020": 71
+    },
+    "securities_by_number_of_zero_years": {
+      "1": 4,
+      "2": 5,
+      "3": 13,
+      "4": 6,
+      "5": 11,
+      "6": 4,
+      "7": 1,
+      "9": 1,
+      "10": 4,
+      "11": 6,
+      "12": 28
+    },
+    "securities_whose_zero_spell_is_consecutive": 82,
+    "securities_whose_first_zero_is_2009": 34,
+    "negative_debt_ratio_source_at_zero": 6,
+    "zero_profit_growth_at_zero": 0,
+    "nonzero_profit_growth_at_zero": 614,
+    "zero_revenue_growth_at_zero": 14,
+    "zero_pe_source_at_zero": 8,
+    "raw_xlsx_cell_type_value_counts": [
+      {
+        "cell_type": "n",
+        "raw_value_repr": "0",
+        "count": 614
+      }
+    ]
+  },
+  "income_growth_pct": {
+    "zero_rows": 20,
+    "securities_with_zeros": 8,
+    "zero_rows_by_source_year": {
+      "2009": 5,
+      "2010": 7,
+      "2011": 6,
+      "2012": 1,
+      "2015": 1
+    },
+    "securities_by_number_of_zero_years": {
+      "1": 1,
+      "2": 2,
+      "3": 5
+    },
+    "securities_whose_zero_spell_is_consecutive": 7,
+    "securities_whose_first_zero_is_2009": 5,
+    "negative_debt_ratio_source_at_zero": 7,
+    "zero_profit_growth_at_zero": 0,
+    "nonzero_profit_growth_at_zero": 20,
+    "zero_revenue_growth_at_zero": 20,
+    "zero_pe_source_at_zero": 9,
+    "raw_xlsx_cell_type_value_counts": [
+      {
+        "cell_type": "n",
+        "raw_value_repr": "0",
+        "count": 20
+      }
+    ]
+  },
+  "profit_growth_pct": {
+    "zero_rows": 0,
+    "securities_with_zeros": 0,
+    "zero_rows_by_source_year": {},
+    "securities_by_number_of_zero_years": {},
+    "securities_whose_zero_spell_is_consecutive": 0,
+    "securities_whose_first_zero_is_2009": 0,
+    "negative_debt_ratio_source_at_zero": 0,
+    "zero_profit_growth_at_zero": 0,
+    "nonzero_profit_growth_at_zero": 0,
+    "zero_revenue_growth_at_zero": 0,
+    "zero_pe_source_at_zero": 0,
+    "raw_xlsx_cell_type_value_counts": []
+  },
+  "provenance": {
+    "source_doi": "10.17632/wx8nwsrrbr.2",
+    "source_sha256": "9cb04bd1d5ed44383d7e54351c8e8c7271797ccd74ecac3934e06302141dd75f",
+    "worksheet": "\u5168\u90e8\u6570\u636e",
+    "raw_cell_read_mode": "openpyxl read_only=True, data_only=False",
+    "code_sha256": "912ae130d7dcb32f25b8d62f4ae1baf29b8ba402d25abb190d73ffd76281e834",
+    "scope": "Numerical zero patterns only; no value is recoded and no new forecast is fitted.",
+    "interpretation": "ROE zeros occur in initial, consecutive 2009--2013 spells, with nonzero profit-growth values and frequently negative source debt ratios. This raises a missing-value or measurement-convention concern but cannot establish the generating rule. Persistent sales-margin zeros include company names identifying financial institutions, consistent with inapplicable gross-margin fields; this is a name-based observation, not a verified sector classification. Numeric XLSX zeros provide no separate missing-value flags."
+  }
+}

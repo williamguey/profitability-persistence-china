@@ -1,0 +1,35 @@
+{
+  "counts": {
+    "consecutive_known_nonfinancial_pairs": 28439,
+    "origin_missing_only_pairs": 97,
+    "target_missing_only_pairs": 153,
+    "both_missing_pairs": 154,
+    "any_missing_pairs": 404,
+    "pairs_with_infinite_roe": 0,
+    "retained_finite_pairs": 28035,
+    "unique_missing_source_cells": 361
+  },
+  "existing_direct_workbook_audit": {
+    "stored_cells": {
+      "checked_unique_cells": 361,
+      "openpyxl_cell_types": {
+        "n": 361
+      },
+      "cell_values": {
+        "None (blank)": 361
+      }
+    },
+    "cached_values": {
+      "checked_unique_cells": 361,
+      "openpyxl_cell_types": {
+        "n": 361
+      },
+      "cell_values": {
+        "None (blank)": 361
+      }
+    }
+  },
+  "reason_for_blanks": "Unknown; neither a non-positive-equity rule nor a database convention is established.",
+  "source_table_identifiers": "Not established by supplied records.",
+  "source_extraction_date": "Not established by supplied records; document/filesystem timestamps are not extraction evidence."
+}

@@ -1,0 +1,553 @@
+{
+  "purpose": "Illustrated profitability figures from saved analysis results",
+  "script": "code/plot_loop1_illustrated.py",
+  "no_new_estimation": true,
+  "no_new_bootstrap_or_confidence_intervals": true,
+  "exports": "Five vector-PDF/PNG figure pairs and an input/output hash manifest; source aggregates are read-only",
+  "main_target_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019
+  ],
+  "main_sample_n": 15258,
+  "source_sha256": {
+    "figure-data/accounting-relationships-hexbin-counts.csv": "b7214d5f5394fc0a9b08ec89ff136294fd7ef72ba19cedb99f23890565ee5036",
+    "figure-data/accounting-relationships-median-bins.csv": "3e6ac9bd0e9e225f8c0ac38cbf2498c956629451b21a0b25ab0b3f94d396c08a",
+    "figure-data/annual-gains-saved-metrics.csv": "65052b78db38e01b7d59f48bcda48dd57f7bb6df44cf7f4cdf930e54caf0501f",
+    "figure-data/gain-decomposition-saved-contrasts.csv": "95874debef67732911ff59fcb86d155e3f732be628cd4ba10d6e2a07a74ca381",
+    "figure-data/persistence-shape-function-grid.csv": "71b142e22e48b431b48633e81ce989b6f35613502eb6c2fbeec5d252bd36685c",
+    "figure-data/persistence-shape-saved-coefficients.csv": "c84dfc4239140eccbd6be7c9413096144cc25f1e90ebcdffce1e82ebe779891c",
+    "figure-data/signal-distributions-histogram-bins.csv": "189f0bc0c78c042cf66c0aee5d851cbd96e9ac830cc7f77c56f2c2bf57f6626a",
+    "figure-data/signal-distributions-quantiles.csv": "2afe1b9f593ef13b6136181ef46fa4d543f22946ee2adeda00fb8ccc55ec464d",
+    "figure-data/accounting-relationships-display.json": "b6f76ac6004e60fa5b0e46a4be44c0582575753e8290474c608f4082c3d4d01e",
+    "figure-data/persistence-shape-reconstruction-check.json": "842998b01bad8536d2d3b15e26e87cc2c866783a44ff3a8d8b32cdbf7162a4e6",
+    "analysis/original-forecast/transparent_main/paired_bootstrap.csv": "96118099b33b09456c0e2605746fa871186309f822a36672cd73b045ab72af27",
+    "analysis/paired_bootstrap.csv": "0db13690ae6e4071dd0d77abe74857f8cabe8533db5e2fedca9da835cdd2521f",
+    "code/plot_loop1_illustrated.py": "0860ec04b0c62b781c97cf4fed561e17166d6f03abe99ccc203dac82c746ebba"
+  },
+  "figures": {
+    "accounting-relationships": {
+      "x_units": "raw ratio to assets",
+      "y_units": "ROE percentage points",
+      "panels": [
+        {
+          "signal": "x1",
+          "sample_n": 15258,
+          "complete_n": 15257,
+          "missing_or_nonfinite_n": 1,
+          "displayed_n": 14678,
+          "outside_display_n": 579,
+          "outside_x_range_n": 306,
+          "outside_y_range_n": 306,
+          "x_1st_99th_percentile_ratio": [
+            -0.38596917556392807,
+            0.7725938645754702
+          ],
+          "y_1st_99th_percentile_pp": [
+            -98.4135,
+            36.01959600000003
+          ],
+          "median_bins_n": 10,
+          "median_bin_total_n": 15257
+        },
+        {
+          "signal": "x2",
+          "sample_n": 15258,
+          "complete_n": 15258,
+          "missing_or_nonfinite_n": 0,
+          "displayed_n": 14670,
+          "outside_display_n": 588,
+          "outside_x_range_n": 306,
+          "outside_y_range_n": 306,
+          "x_1st_99th_percentile_ratio": [
+            0.020363822160454858,
+            0.907111813847693
+          ],
+          "y_1st_99th_percentile_pp": [
+            -98.4119,
+            36.01901200000002
+          ],
+          "median_bins_n": 10,
+          "median_bin_total_n": 15258
+        }
+      ],
+      "hexbin_gridsize": [
+        40,
+        28
+      ],
+      "shared_color_scale_max_count": 296.0,
+      "display_rule": "Panel-specific empirical 1st/99th percentiles of all finite complete pairs, both axes",
+      "summary_rule": "Ten equal-frequency x bins computed from all complete pairs, including both y tails",
+      "no_regression_or_confidence_band": true,
+      "definition_caution": "x2 is share capital/assets, not the original thesis (working capital-share capital)/assets",
+      "pdf": "output/illustrated-figures/accounting-relationships.pdf",
+      "png": "output/illustrated-figures/accounting-relationships.png",
+      "width_inches": 7.0,
+      "height_inches": 3.7,
+      "png_dpi": 180,
+      "pdf_raster_image_count": 0,
+      "pdf_page_size_points": [
+        504.0,
+        266.4
+      ]
+    },
+    "persistence-shape": {
+      "units": "ROE percentage points on both axes",
+      "target_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "negative_x_limits_pp": [
+        -60,
+        0
+      ],
+      "nonnegative_x_limits_pp": [
+        0,
+        50
+      ],
+      "shared_y_limits_pp": [
+        -30,
+        36
+      ],
+      "bold_target_year": 2019,
+      "transforms": "Original training-only clipping; raw origin sign determines branch; zero belongs to nonnegative branch",
+      "sign_jump_preserved": true,
+      "separate_negative_left_limit": true,
+      "no_accounting_signals": true,
+      "earlier_curve_spread_is_not_confidence_interval": true,
+      "prediction_reconstruction": [
+        {
+          "target_year": 2015,
+          "model": "lad_ar",
+          "n_predictions": 2580,
+          "max_abs_reconstruction_error_pp": 1.0658141036401503e-14,
+          "coefficient_transform_check_passed": true
+        },
+        {
+          "target_year": 2015,
+          "model": "lad_piecewise",
+          "n_predictions": 2580,
+          "max_abs_reconstruction_error_pp": 1.7763568394002505e-14,
+          "coefficient_transform_check_passed": true
+        },
+        {
+          "target_year": 2016,
+          "model": "lad_ar",
+          "n_predictions": 2774,
+          "max_abs_reconstruction_error_pp": 7.105427357601002e-15,
+          "coefficient_transform_check_passed": true
+        },
+        {
+          "target_year": 2016,
+          "model": "lad_piecewise",
+          "n_predictions": 2774,
+          "max_abs_reconstruction_error_pp": 1.0658141036401503e-14,
+          "coefficient_transform_check_passed": true
+        },
+        {
+          "target_year": 2017,
+          "model": "lad_ar",
+          "n_predictions": 3051,
+          "max_abs_reconstruction_error_pp": 1.0658141036401503e-14,
+          "coefficient_transform_check_passed": true
+        },
+        {
+          "target_year": 2017,
+          "model": "lad_piecewise",
+          "n_predictions": 3051,
+          "max_abs_reconstruction_error_pp": 1.021405182655144e-14,
+          "coefficient_transform_check_passed": true
+        },
+        {
+          "target_year": 2018,
+          "model": "lad_ar",
+          "n_predictions": 3397,
+          "max_abs_reconstruction_error_pp": 7.105427357601002e-15,
+          "coefficient_transform_check_passed": true
+        },
+        {
+          "target_year": 2018,
+          "model": "lad_piecewise",
+          "n_predictions": 3397,
+          "max_abs_reconstruction_error_pp": 7.105427357601002e-15,
+          "coefficient_transform_check_passed": true
+        },
+        {
+          "target_year": 2019,
+          "model": "lad_ar",
+          "n_predictions": 3456,
+          "max_abs_reconstruction_error_pp": 1.0658141036401503e-14,
+          "coefficient_transform_check_passed": true
+        },
+        {
+          "target_year": 2019,
+          "model": "lad_piecewise",
+          "n_predictions": 3456,
+          "max_abs_reconstruction_error_pp": 1.199040866595169e-14,
+          "coefficient_transform_check_passed": true
+        }
+      ],
+      "pdf": "output/illustrated-figures/persistence-shape.pdf",
+      "png": "output/illustrated-figures/persistence-shape.png",
+      "width_inches": 7.0,
+      "height_inches": 3.65,
+      "png_dpi": 180,
+      "pdf_raster_image_count": 0,
+      "pdf_page_size_points": [
+        504.0,
+        262.8
+      ]
+    },
+    "gain-decomposition": {
+      "units": "MAE reduction in percentage points",
+      "pooled_target_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019
+      ],
+      "shared_x_limits_pp": [
+        -0.025,
+        0.7
+      ],
+      "contrasts": [
+        {
+          "panel": "accounting",
+          "n": 15258,
+          "partition": "2015-2019",
+          "reference": "lad_ar",
+          "candidate": "lad_piecewise",
+          "mae_reduction_pp": 0.5168120681763231,
+          "relative_reduction_pct": 4.733822200849099,
+          "ci_low_pp": 0.4482607991849479,
+          "ci_high_pp": 0.5839008552609326,
+          "ci_low_relative_pct": 3.4879940690793947,
+          "ci_high_relative_pct": 6.091363135176393,
+          "bootstrap_draws": 2000,
+          "seed": 20261025,
+          "clusters": 3542,
+          "label_3dp": "0.517 [0.448, 0.584]"
+        },
+        {
+          "panel": "accounting",
+          "n": 15258,
+          "partition": "2015-2019",
+          "reference": "lad_piecewise",
+          "candidate": "lad_signals",
+          "mae_reduction_pp": 0.0510967899077918,
+          "relative_reduction_pct": 0.49128575472913,
+          "ci_low_pp": 0.0351680730958111,
+          "ci_high_pp": 0.0685580703254553,
+          "ci_low_relative_pct": 0.3146670237062859,
+          "ci_high_relative_pct": 0.7239025535058701,
+          "bootstrap_draws": 2000,
+          "seed": 20261025,
+          "clusters": 3542,
+          "label_3dp": "0.051 [0.035, 0.069]"
+        },
+        {
+          "panel": "public",
+          "n": 13970,
+          "reference": "lad_ar",
+          "candidate": "lad_piecewise",
+          "mae_reduction_pp": 0.5656652850224217,
+          "relative_reduction_pct": 7.282637662760483,
+          "ci_low_pp": 0.5081836362351726,
+          "ci_high_pp": 0.6247051909709183,
+          "ci_low_relative_pct": 5.152945579864829,
+          "ci_high_relative_pct": 9.292114971832587,
+          "bootstrap_draws": 2000,
+          "seed": 20261025,
+          "clusters": 3270,
+          "label_3dp": "0.566 [0.508, 0.625]"
+        },
+        {
+          "panel": "public",
+          "n": 13970,
+          "reference": "lad_piecewise",
+          "candidate": "lad_signals",
+          "mae_reduction_pp": 0.009454583540001,
+          "relative_reduction_pct": 0.131283610331523,
+          "ci_low_pp": 0.0036928228849164,
+          "ci_high_pp": 0.0152746652363638,
+          "ci_low_relative_pct": 0.049812270955786,
+          "ci_high_relative_pct": 0.2368376237993393,
+          "bootstrap_draws": 2000,
+          "seed": 20261025,
+          "clusters": 3270,
+          "label_3dp": "0.009 [0.004, 0.015]"
+        }
+      ],
+      "intervals": "Previously saved percentile 95% paired security-cluster intervals; 2000 draws, seed 20261025; conditional on fixed forecasts and realized years",
+      "panels_not_pooled": true,
+      "number_of_successive_contrasts_per_panel": 2,
+      "pdf": "output/illustrated-figures/gain-decomposition.pdf",
+      "png": "output/illustrated-figures/gain-decomposition.png",
+      "width_inches": 7.0,
+      "height_inches": 4.15,
+      "png_dpi": 180,
+      "pdf_raster_image_count": 0,
+      "pdf_page_size_points": [
+        504.0,
+        298.8
+      ]
+    },
+    "annual-gains": {
+      "left_units": "MAE percentage points",
+      "right_units": "Percentage reduction in MAE",
+      "relative_gain_formula": "100 * (LAD_asymmetric_MAE - LAD_augmented_MAE) / LAD_asymmetric_MAE",
+      "left_y_limits_pp": [
+        0,
+        21
+      ],
+      "right_y_limits_pct": [
+        -0.13,
+        1.12
+      ],
+      "2020_separate_evaluation": true,
+      "2019_to_2020_segment": "dashed",
+      "no_new_intervals": true,
+      "table_values": [
+        {
+          "year": 2015,
+          "primary_linear_mae_pp": 8.086964803697233,
+          "primary_asymmetric_mae_pp": 7.54367646959035,
+          "primary_augmented_mae_pp": 7.511400369662242,
+          "primary_accounting_relative_gain_pct": 0.427856364972936,
+          "public_augmented_mae_pp": 6.140982841989196,
+          "public_accounting_relative_gain_pct": -0.045712317897228294
+        },
+        {
+          "year": 2016,
+          "primary_linear_mae_pp": 7.352870178112227,
+          "primary_asymmetric_mae_pp": 6.58578565161015,
+          "primary_augmented_mae_pp": 6.526772704225877,
+          "primary_accounting_relative_gain_pct": 0.8960654127855697,
+          "public_augmented_mae_pp": 4.813729914305872,
+          "public_accounting_relative_gain_pct": 0.30510166831093005
+        },
+        {
+          "year": 2017,
+          "primary_linear_mae_pp": 10.069780919110142,
+          "primary_asymmetric_mae_pp": 9.641951840440235,
+          "primary_augmented_mae_pp": 9.58396066070694,
+          "primary_accounting_relative_gain_pct": 0.6014464777771423,
+          "public_augmented_mae_pp": 5.028618629638321,
+          "public_accounting_relative_gain_pct": 0.5369639485466918
+        },
+        {
+          "year": 2018,
+          "primary_linear_mae_pp": 10.39317105310208,
+          "primary_asymmetric_mae_pp": 10.067781884026076,
+          "primary_augmented_mae_pp": 10.029096085518049,
+          "primary_accounting_relative_gain_pct": 0.3842534428502791,
+          "public_augmented_mae_pp": 7.072857221487016,
+          "public_accounting_relative_gain_pct": 0.051939525622283725
+        },
+        {
+          "year": 2019,
+          "primary_linear_mae_pp": 17.155243865753917,
+          "primary_asymmetric_mae_pp": 16.59237099788679,
+          "primary_augmented_mae_pp": 16.52746537877322,
+          "primary_accounting_relative_gain_pct": 0.39117748224070586,
+          "public_augmented_mae_pp": 11.67770650784638,
+          "public_accounting_relative_gain_pct": 0.04124151531864096
+        },
+        {
+          "year": 2020,
+          "primary_linear_mae_pp": 10.315286358352736,
+          "primary_asymmetric_mae_pp": 9.633115695403582,
+          "primary_augmented_mae_pp": 9.613360573692852,
+          "primary_accounting_relative_gain_pct": 0.20507510067751453,
+          "public_augmented_mae_pp": 7.444570535528495,
+          "public_accounting_relative_gain_pct": 0.11766732446877233
+        }
+      ],
+      "connecting_lines_are_descriptive_only": true,
+      "pdf": "output/illustrated-figures/annual-gains.pdf",
+      "png": "output/illustrated-figures/annual-gains.png",
+      "width_inches": 7.0,
+      "height_inches": 3.65,
+      "png_dpi": 180,
+      "pdf_raster_image_count": 0,
+      "pdf_page_size_points": [
+        504.0,
+        262.8
+      ]
+    },
+    "signal-distributions": {
+      "layout": "4 rows by 2 columns",
+      "x_units": "raw ratio to assets",
+      "y_units": "density per unit of raw ratio",
+      "main_sample_n": 15258,
+      "signals": [
+        {
+          "signal": "x1",
+          "name": "Working capital",
+          "definition": "(current_assets-current_liabilities)/total_assets",
+          "sample_n": 15258,
+          "finite_observed_n": 15257,
+          "missing_or_nonfinite_n": 1,
+          "displayed_n": 14951,
+          "hidden_tail_n": 306,
+          "q01_ratio": -0.38596917556392807,
+          "median_ratio": 0.2294794858253152,
+          "q99_ratio": 0.7725938645754702,
+          "displayed_probability_mass": 0.9799436324310152,
+          "histogram_bins": 35
+        },
+        {
+          "signal": "x2",
+          "name": "Share capital",
+          "definition": "share_capital/total_assets",
+          "sample_n": 15258,
+          "finite_observed_n": 15258,
+          "missing_or_nonfinite_n": 0,
+          "displayed_n": 14952,
+          "hidden_tail_n": 306,
+          "q01_ratio": 0.020363822160454858,
+          "median_ratio": 0.13284329840820658,
+          "q99_ratio": 0.907111813847693,
+          "displayed_probability_mass": 0.9799449469130947,
+          "histogram_bins": 35
+        },
+        {
+          "signal": "x3",
+          "name": "Operating profit",
+          "definition": "operating_profit/total_assets",
+          "sample_n": 15258,
+          "finite_observed_n": 15258,
+          "missing_or_nonfinite_n": 0,
+          "displayed_n": 14952,
+          "hidden_tail_n": 306,
+          "q01_ratio": -0.2452928716748602,
+          "median_ratio": 0.040632732924495304,
+          "q99_ratio": 0.21934781245888588,
+          "displayed_probability_mass": 0.9799449469130947,
+          "histogram_bins": 35
+        },
+        {
+          "signal": "x4",
+          "name": "Finance expense",
+          "definition": "financial_expenses_total/total_assets",
+          "sample_n": 15258,
+          "finite_observed_n": 15257,
+          "missing_or_nonfinite_n": 1,
+          "displayed_n": 14951,
+          "hidden_tail_n": 306,
+          "q01_ratio": -0.016481957182130344,
+          "median_ratio": 0.0049178421396844,
+          "q99_ratio": 0.039768617606193754,
+          "displayed_probability_mass": 0.9799436324310152,
+          "histogram_bins": 35
+        },
+        {
+          "signal": "x5",
+          "name": "Net profit",
+          "definition": "net_profit/total_assets",
+          "sample_n": 15258,
+          "finite_observed_n": 15258,
+          "missing_or_nonfinite_n": 0,
+          "displayed_n": 14952,
+          "hidden_tail_n": 306,
+          "q01_ratio": -0.24818831684496892,
+          "median_ratio": 0.03639847645357115,
+          "q99_ratio": 0.18980860299390379,
+          "displayed_probability_mass": 0.9799449469130947,
+          "histogram_bins": 35
+        },
+        {
+          "signal": "x6",
+          "name": "Net nonoperating income",
+          "definition": "(non_operating_income-non_operating_expenses)/total_assets",
+          "sample_n": 15258,
+          "finite_observed_n": 15117,
+          "missing_or_nonfinite_n": 141,
+          "displayed_n": 14813,
+          "hidden_tail_n": 304,
+          "q01_ratio": -0.016803972535807322,
+          "median_ratio": 0.001514603284758,
+          "q99_ratio": 0.055664308793065054,
+          "displayed_probability_mass": 0.979890189852484,
+          "histogram_bins": 35
+        },
+        {
+          "signal": "x7",
+          "name": "Income tax",
+          "definition": "income_tax_expense/total_assets",
+          "sample_n": 15258,
+          "finite_observed_n": 15173,
+          "missing_or_nonfinite_n": 85,
+          "displayed_n": 14869,
+          "hidden_tail_n": 304,
+          "q01_ratio": -0.007231579846795064,
+          "median_ratio": 0.0074704205794082,
+          "q99_ratio": 0.04445454548548305,
+          "displayed_probability_mass": 0.9799644104659593,
+          "histogram_bins": 35
+        },
+        {
+          "signal": "x8",
+          "name": "Depreciation",
+          "definition": "depreciation_fixed_assets/total_assets",
+          "sample_n": 15258,
+          "finite_observed_n": 15256,
+          "missing_or_nonfinite_n": 2,
+          "displayed_n": 14950,
+          "hidden_tail_n": 306,
+          "q01_ratio": 0.00042525292600897505,
+          "median_ratio": 0.01586694275664645,
+          "q99_ratio": 0.06592784551961667,
+          "displayed_probability_mass": 0.9799423177766124,
+          "histogram_bins": 35
+        }
+      ],
+      "histogram_normalization": "count / (total finite observed N * bin width); omitted tails are not renormalized",
+      "display_window": "Empirical 1st\u201399th percentiles of each signal's finite observed values",
+      "no_imputation_or_clipping_in_descriptive_histograms": true,
+      "display_does_not_remove_records_from_estimation": true,
+      "no_normal_fits_or_kernel_smoothing": true,
+      "pdf": "output/illustrated-figures/signal-distributions.pdf",
+      "png": "output/illustrated-figures/signal-distributions.png",
+      "width_inches": 7.0,
+      "height_inches": 7.2,
+      "png_dpi": 180,
+      "pdf_raster_image_count": 0,
+      "pdf_page_size_points": [
+        504.0,
+        518.4
+      ]
+    }
+  },
+  "validation": {
+    "saved_function_grid_reconstruction": true,
+    "historical_persistence_prediction_count_checked": 30516,
+    "historical_persistence_max_abs_prediction_error_pp": 1.7763568394002505e-14
+  },
+  "output_sha256": {
+    "figure-data/accounting-relationships-hexbin-counts.csv": "b7214d5f5394fc0a9b08ec89ff136294fd7ef72ba19cedb99f23890565ee5036",
+    "figure-data/accounting-relationships-median-bins.csv": "3e6ac9bd0e9e225f8c0ac38cbf2498c956629451b21a0b25ab0b3f94d396c08a",
+    "figure-data/annual-gains-saved-metrics.csv": "65052b78db38e01b7d59f48bcda48dd57f7bb6df44cf7f4cdf930e54caf0501f",
+    "figure-data/gain-decomposition-saved-contrasts.csv": "95874debef67732911ff59fcb86d155e3f732be628cd4ba10d6e2a07a74ca381",
+    "figure-data/persistence-shape-function-grid.csv": "71b142e22e48b431b48633e81ce989b6f35613502eb6c2fbeec5d252bd36685c",
+    "figure-data/persistence-shape-saved-coefficients.csv": "c84dfc4239140eccbd6be7c9413096144cc25f1e90ebcdffce1e82ebe779891c",
+    "figure-data/signal-distributions-histogram-bins.csv": "189f0bc0c78c042cf66c0aee5d851cbd96e9ac830cc7f77c56f2c2bf57f6626a",
+    "figure-data/signal-distributions-quantiles.csv": "2afe1b9f593ef13b6136181ef46fa4d543f22946ee2adeda00fb8ccc55ec464d",
+    "output/illustrated-figures/accounting-relationships.pdf": "ab8d2902e51c66748e4a01ed823206bec756446e6399569c1cb5b5b38258da8a",
+    "output/illustrated-figures/accounting-relationships.png": "9a55ae53d101404c6defd9998c4261ab59aa898e4c257d0c92877b434bf76cb2",
+    "output/illustrated-figures/annual-gains.pdf": "1fea530d83e2889c77da62b575a32ca72e9bc930cb1c00c1b4a9a01e569f1790",
+    "output/illustrated-figures/annual-gains.png": "d09d50696ff8eed5651dc208b531387dbf5bed9fbd6befb0d9d242b5f6bfb886",
+    "output/illustrated-figures/gain-decomposition.pdf": "e64b13df9f31da0f426601471820c5c26767f077c9dbd4f8cb9de529ef8cf8e4",
+    "output/illustrated-figures/gain-decomposition.png": "97649030712c01e5fb67f7b6b063a96eede8624be26b391803b96f6b618fc509",
+    "output/illustrated-figures/persistence-shape.pdf": "acef204bfeb7e15b21164302c6d212e857032c61f34bba5e878df6341178460c",
+    "output/illustrated-figures/persistence-shape.png": "523b6c34c96e1af1084018f5e855f61cb1a466e0b546be10373aaaeb8353e5e6",
+    "output/illustrated-figures/signal-distributions.pdf": "cff8527eed8e3ef9db071c68be0b09436e16f8f144f5a45790024e6f1dad814d",
+    "output/illustrated-figures/signal-distributions.png": "9768e8da18387b4fb1ee9f2cfd7d9c056310f50f86e74213c4277c82cd763c97"
+  }
+}

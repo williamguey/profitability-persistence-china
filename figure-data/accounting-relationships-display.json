@@ -1,0 +1,42 @@
+[
+  {
+    "signal": "x1",
+    "sample_n": 15258,
+    "complete_n": 15257,
+    "missing_or_nonfinite_n": 1,
+    "displayed_n": 14678,
+    "outside_display_n": 579,
+    "outside_x_range_n": 306,
+    "outside_y_range_n": 306,
+    "x_1st_99th_percentile_ratio": [
+      -0.38596917556392807,
+      0.7725938645754702
+    ],
+    "y_1st_99th_percentile_pp": [
+      -98.4135,
+      36.01959600000003
+    ],
+    "median_bins_n": 10,
+    "median_bin_total_n": 15257
+  },
+  {
+    "signal": "x2",
+    "sample_n": 15258,
+    "complete_n": 15258,
+    "missing_or_nonfinite_n": 0,
+    "displayed_n": 14670,
+    "outside_display_n": 588,
+    "outside_x_range_n": 306,
+    "outside_y_range_n": 306,
+    "x_1st_99th_percentile_ratio": [
+      0.020363822160454858,
+      0.907111813847693
+    ],
+    "y_1st_99th_percentile_pp": [
+      -98.4119,
+      36.01901200000002
+    ],
+    "median_bins_n": 10,
+    "median_bin_total_n": 15258
+  }
+]

@@ -1,0 +1,11 @@
+target_year,model,nonnegative_intercept_pp,negative_intercept_pp,nonnegative_slope,negative_slope,origin_clip_lower_pp,origin_clip_upper_pp,interpretation
+2015,lad_ar,1.8932922457709784,1.8932922457709784,0.6425402307986907,0.6425402307986907,-39.074892,41.632024,ROE slopes within training clipping thresholds; slopes are zero outside thresholds
+2015,lad_piecewise,0.6470727468554616,0.7734413767262086,0.7734578594562023,-0.0570727065656287,-39.074892,41.632024,ROE slopes within training clipping thresholds; slopes are zero outside thresholds
+2016,lad_ar,1.806571574527954,1.806571574527954,0.6469957680583317,0.6469957680583317,-42.454207999999994,39.89424000000002,ROE slopes within training clipping thresholds; slopes are zero outside thresholds
+2016,lad_piecewise,0.5524742861011545,0.668388592955669,0.7829657232642308,-0.0613169141028496,-42.454207999999994,39.89424000000002,ROE slopes within training clipping thresholds; slopes are zero outside thresholds
+2017,lad_ar,2.177247348300133,2.177247348300133,0.6172854574541468,0.6172854574541468,-45.888928,39.038426000000015,ROE slopes within training clipping thresholds; slopes are zero outside thresholds
+2017,lad_piecewise,0.6368515695684387,0.804683041514481,0.7818488488862627,-0.0588586567425165,-45.888928,39.038426000000015,ROE slopes within training clipping thresholds; slopes are zero outside thresholds
+2018,lad_ar,2.2388516301286794,2.2388516301286794,0.6215826870586195,0.6215826870586195,-45.586611999999995,38.49561399999942,ROE slopes within training clipping thresholds; slopes are zero outside thresholds
+2018,lad_piecewise,0.7741864146782831,0.926401131667376,0.7819349735747756,-0.057264594884408,-45.586611999999995,38.49561399999942,ROE slopes within training clipping thresholds; slopes are zero outside thresholds
+2019,lad_ar,2.121199021809346,2.121199021809346,0.6364622104647943,0.6364622104647943,-43.67632,39.069614000000016,ROE slopes within training clipping thresholds; slopes are zero outside thresholds
+2019,lad_piecewise,0.7598864423983178,0.9313624618835148,0.7848183861378962,-0.0563968198479147,-43.67632,39.069614000000016,ROE slopes within training clipping thresholds; slopes are zero outside thresholds

@@ -1,0 +1,13 @@
+target_year,split,rows,complete_interior_n,complete_clipped_n,missing_component_n,any_identity_component_clipped_n,any_continuous_predictor_clipped_n,any_continuous_predictor_missing_n
+2015,train,9145,8660,484,1,484,1079,8
+2015,evaluation,2580,2460,120,0,120,282,0
+2016,train,11725,11107,617,1,617,1384,8
+2016,evaluation,2774,2603,171,0,171,329,0
+2017,train,14499,13751,747,1,747,1690,8
+2017,evaluation,3051,2862,142,47,146,315,47
+2018,train,17550,16607,895,48,899,2036,55
+2018,evaluation,3397,3163,145,89,151,318,90
+2019,train,20947,19747,1063,137,1073,2431,145
+2019,evaluation,3456,3066,307,83,316,510,85
+2020,train,24403,22973,1210,220,1226,2819,230
+2020,evaluation,3632,3248,300,84,307,547,93

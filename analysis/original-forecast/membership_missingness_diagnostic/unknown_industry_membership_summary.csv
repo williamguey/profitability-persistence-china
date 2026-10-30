@@ -1,0 +1,5 @@
+provenance,source_rows,securities,finite_roe_n,missing_roe_n,net_profit_negative_n,net_profit_zero_n,net_profit_positive_n,net_profit_missing_n,net_profit_nonfinite_n
+all,1495,534,43,1452,118,0,861,516,0
+matched_at_or_after_listing,51,19,34,17,4,0,47,0,0
+prelisting,271,259,3,268,0,0,3,268,0
+unmatched,1173,260,6,1167,114,0,811,248,0

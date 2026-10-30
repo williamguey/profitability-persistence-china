@@ -1,0 +1,16 @@
+scope,net_profit_sign,n
+missing_origin_slots,negative,138
+missing_origin_slots,zero,0
+missing_origin_slots,positive,112
+missing_origin_slots,missing,1
+missing_origin_slots,nonfinite,0
+missing_target_slots,negative,145
+missing_target_slots,zero,0
+missing_target_slots,positive,87
+missing_target_slots,missing,75
+missing_target_slots,nonfinite,0
+unique_missing_source_cells,negative,165
+unique_missing_source_cells,zero,0
+unique_missing_source_cells,positive,120
+unique_missing_source_cells,missing,76
+unique_missing_source_cells,nonfinite,0

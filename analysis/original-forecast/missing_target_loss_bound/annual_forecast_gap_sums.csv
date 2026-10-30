@@ -1,0 +1,11 @@
+target_year,contrast,excluded_n,finite_forecast_pair_n,unresolved_forecast_pair_n,sum_absolute_forecast_gap_pp
+2015,asymmetry_first,9,9,0,232.0983323432897
+2016,asymmetry_first,4,4,0,101.98523307849244
+2017,asymmetry_first,5,5,0,125.03097725823493
+2018,asymmetry_first,17,17,0,456.13852048759276
+2019,asymmetry_first,28,28,0,788.8500998857488
+2015,accounting_second,9,9,0,11.627635591902889
+2016,accounting_second,4,4,0,6.200224160205056
+2017,accounting_second,5,5,0,6.302683521083658
+2018,accounting_second,17,17,0,19.080923102578197
+2019,accounting_second,28,28,0,35.43320040740641

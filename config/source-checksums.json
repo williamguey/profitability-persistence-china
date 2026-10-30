@@ -1,0 +1,333 @@
+{
+  "source_files": {
+    "accounting_workbook": {
+      "filename": "Dados Tese.xlsx",
+      "sha256": "759de2c9a3ecd6ab03f56b7ebc17ebf6d8b937d25bc9bb21bcb20b29273ee8ab",
+      "redistributed": false
+    },
+    "accounting_prepared_panel": {
+      "filename": "original_panel.csv",
+      "sha256": "b6290b3629760ef272f75c95e78d1b9f4029e1d4dfd152617135def5a3152b23",
+      "redistributed": false
+    },
+    "public_workbook": {
+      "doi": "10.17632/wx8nwsrrbr.2",
+      "sha256": "9cb04bd1d5ed44383d7e54351c8e8c7271797ccd74ecac3934e06302141dd75f",
+      "redistributed": false,
+      "retrieval": "python code/download_public_data.py"
+    },
+    "public_prepared_panel": {
+      "sha256": "fac540da0d99b8dc057510b4864709be84f4e7a4fe4a9595e81776bad4902d8e",
+      "redistributed": false
+    }
+  },
+  "code_provenance": {
+    "analysis/original-recovery/extract_original.py": {
+      "validated_project_sha256": "1961b1e994f49b104ef3aafbc85cad4e49edf35c029e590d64fafa9255c43656",
+      "distributed_sha256": "1961b1e994f49b104ef3aafbc85cad4e49edf35c029e590d64fafa9255c43656"
+    },
+    "analysis/original-recovery/prepare_panel.py": {
+      "validated_project_sha256": "9fcc7667df1a6b5f18be4f129e34a5ae1ae163dcd9e80a7b0223080721ea303c",
+      "distributed_sha256": "9fcc7667df1a6b5f18be4f129e34a5ae1ae163dcd9e80a7b0223080721ea303c"
+    },
+    "analysis/original-recovery/reproduce_original.py": {
+      "validated_project_sha256": "0bc85c359d5e0d65d3ef419f2fcf51eaeed8aaf6166ffcdf326d14018f306883",
+      "distributed_sha256": "0bc85c359d5e0d65d3ef419f2fcf51eaeed8aaf6166ffcdf326d14018f306883"
+    },
+    "code/analyze_original_listing_sensitivity.py": {
+      "validated_project_sha256": "674fa95a6ef8dbc99d7b40349309538169cae5a8d5c898fc32c6ff2d571e0125",
+      "distributed_sha256": "743a3c3d39c1715039fca64dc523cc770a638381ceb1d49005a8819c4bed23b3"
+    },
+    "code/audit_listing_and_origin_extremes.py": {
+      "validated_project_sha256": "0fb350158d7c173cd91392342be916cfb4659ddb028953cea3e16021a5de23f3",
+      "distributed_sha256": "daf513f9985f86029b068e48c382a7f9904e61c8ce736e905e9408b82833fab5"
+    },
+    "code/analyze_original_nesting_order.py": {
+      "validated_project_sha256": "021a3c669415008522dae8dbc3bc48568f3fbfe0d02722fcb4db8068c6a2fe1b",
+      "distributed_sha256": "6c57b1e1c8400e5988749f0191f0c6bbd66bf0f2da48163c7f90d556bdc4275f"
+    },
+    "code/analyze_public_factorial.py": {
+      "validated_project_sha256": "bec92f9fb24c91c7ce18161eade373e88a0eb375036d24b07cbbbec0555f345d",
+      "distributed_sha256": "f710e29e94ab7aed695d351a9f5aa3760039c0d492779576388f6287e029640b"
+    },
+    "code/audit_public_zeros.py": {
+      "validated_project_sha256": "912ae130d7dcb32f25b8d62f4ae1baf29b8ba402d25abb190d73ffd76281e834",
+      "distributed_sha256": "912ae130d7dcb32f25b8d62f4ae1baf29b8ba402d25abb190d73ffd76281e834"
+    },
+    "code/build_paper_tables.py": {
+      "validated_project_sha256": "ccc14f40d6b6d538805dc1032d787b9c80fa4234b6232ad4f7cbc772c7d2e59a",
+      "distributed_sha256": "fdbecb74a13c2edc4e58c7e3f2fbbc9bc8e546e3d6edc8513f4ff22e57e72b77"
+    },
+    "code/analyze_original.py": {
+      "validated_project_sha256": "9bd1007857e889710b0dbd9e8cb94a16fe53e9e93784f4198429d9a6ba6189b0",
+      "distributed_sha256": "81638cb9257e64b0f56d51d4bf8410975a1a9260bd572b46720db10fcdacb7fb"
+    },
+    "code/analyze_forecasts.py": {
+      "validated_project_sha256": "544309608cbdd426820774f512eea1fac07ed9d8516460f4f59a8ec15d9d450e",
+      "distributed_sha256": "544309608cbdd426820774f512eea1fac07ed9d8516460f4f59a8ec15d9d450e"
+    },
+    "code/extract_public_panel.py": {
+      "validated_project_sha256": "b4787d1a7872ff553eedaa71821311c4c1e03fe722055357f568bcb352f087b3",
+      "distributed_sha256": "7c5f7b2e6e6f44c4340e7a2aeccfe1c1d3d9e256607dd9eceac710c2cb050ff9"
+    },
+    "code/decompose_original_fixed_forecasts.py": {
+      "validated_project_sha256": "f1d038ec93b8173f14c6779b4c01cdffb3cf20c9dc5fcbc5ab7f21526ede7185",
+      "distributed_sha256": "4b6695e14304cacc94ca63953d5f05e43d29a83735df52e8f2b13f9dcec34b31"
+    },
+    "code/describe_public_sign_and_constructs.py": {
+      "validated_project_sha256": "72270c0ccb9f580f4472bba593627e65f3127808773ae318e28c4ddb576baf7e",
+      "distributed_sha256": "bb609f289f6724a5c4f5ca11cf15d6ffd4f6c7758eba661a120c3242b7db11ee"
+    },
+    "analysis/check_primary_constructs.py": {
+      "validated_project_sha256": "9bc6cdba2cd4974f2863224ef4887ad249b46ea1ed460f7fb42db56abfe7230b",
+      "distributed_sha256": "9bc6cdba2cd4974f2863224ef4887ad249b46ea1ed460f7fb42db56abfe7230b"
+    },
+    "code/analyze_original_combined_lines.py": {
+      "validated_project_sha256": "6e088fe0862ac697db588bb214de081fe5a91cd5c6bf3526b22568110ca630d0",
+      "distributed_sha256": "5b1bb8ac9227dd45ca7f19fe9729ef0b6cdf0d70733f6c7dae86d445288859bd"
+    },
+    "code/audit_public_sector_signal_sign.py": {
+      "validated_project_sha256": "6b8030ce21cd6b839cef71331c5a23ff8424396c44c9c639b7bac57730d0365f",
+      "distributed_sha256": "970ffdf7516d99782604a8c3659b647f19990f9c0e62cff008ed7ceb20015ae5"
+    },
+    "code/describe_original.py": {
+      "validated_project_sha256": "dab6ba4140780db9bc98907d15a2394fd95c4e5b0ac429642296c9d9f4f35792",
+      "distributed_sha256": "dab6ba4140780db9bc98907d15a2394fd95c4e5b0ac429642296c9d9f4f35792"
+    },
+    "code/describe_original_accounting_lines_identity.py": {
+      "validated_project_sha256": "e897d211e9b1152b61df14dc0e069732526de848ec78dd564632b8dc87808e38",
+      "distributed_sha256": "da2740a6902bd723b5e32a4ece21b811df683a33d4f80d34e199bafc72ff0341"
+    },
+    "code/describe_original_provenance_coverage.py": {
+      "validated_project_sha256": "db674a825c7e194586ea7c8bbd11ac1016fcb27a4bec8375e54a47b18d2ae9f5",
+      "distributed_sha256": "360c8233d707175e8b6b1995cf6b9596fd6ba981dac4dd2b03a4069f64606a69"
+    },
+    "code/diagnose_original.py": {
+      "validated_project_sha256": "7f4573a583aee75cf770886b8e52db3c19cd660bfe07edc93cfa1ad757cd1134",
+      "distributed_sha256": "7f4573a583aee75cf770886b8e52db3c19cd660bfe07edc93cfa1ad757cd1134"
+    },
+    "code/download_public_data.py": {
+      "validated_project_sha256": "a46b741019d69fda721391210161622621a3c30ee646140109f10656d6bfe0c0",
+      "distributed_sha256": "a46b741019d69fda721391210161622621a3c30ee646140109f10656d6bfe0c0"
+    },
+    "code/plot_original.py": {
+      "validated_project_sha256": "87dc821144f413fec4f8ebb3471604faa1dbec80130839d752631a7018206f7c",
+      "distributed_sha256": "87dc821144f413fec4f8ebb3471604faa1dbec80130839d752631a7018206f7c"
+    },
+    "code/robustness.py": {
+      "validated_project_sha256": "4576cc7d6ac5c9af2ba2820208b1a84b2b15cb6b22cf45f72077e5874af87dac",
+      "distributed_sha256": "4576cc7d6ac5c9af2ba2820208b1a84b2b15cb6b22cf45f72077e5874af87dac"
+    },
+    "code/describe_original_membership_missingness.py": {
+      "validated_project_sha256": "dfe96985fe14e26c948c690890ea8fad8dfc0094398786e0cb98feefbb3e6458",
+      "distributed_sha256": "7088d99b2d55acef142f282b8423a3da4bf793466e9a0990193ed18cd443f011"
+    },
+    "code/describe_original_loss_recovery_availability.py": {
+      "validated_project_sha256": "6e8c52c0a1ba5dc7e170ee7559802ad06d4764ea8a9560679421e26a0ee68baa",
+      "distributed_sha256": "c220995129c3e6a481db5080b3e2ddbae2525fc780c07067a3e629646328b2c4"
+    },
+    "code/analyze_original_income_identity.py": {
+      "validated_project_sha256": "127a27ad01f03b82376673d799d92b92fb9b4976ade6a676ba1304e7c8ed2919",
+      "distributed_sha256": "9e27a5c6473ba087f8b8ec8052167c1159a687b00fb98b0b7ddf38c2f3e9581b"
+    },
+    "code/analyze_original_drop_np.py": {
+      "validated_project_sha256": "40fb498228283a726004351835fc3a619183418af4d9cfbe0002d2c10ba7e2ee",
+      "distributed_sha256": "c4f4ded2a37506b05a33603ad149af4bc1f5878f76594f05c784f525c789977b"
+    },
+    "code/analyze_original_sign_interaction.py": {
+      "validated_project_sha256": "c7cab27fb0e4d6656debb60033923456ed6ea52d4cb70fe303aee00c1bbfd750",
+      "distributed_sha256": "79c89b2295695af2d90291132b273bb94124384f9113cc2ffd3a525fdcec4230"
+    },
+    "code/bound_original_missing_target_losses.py": {
+      "validated_project_sha256": "2f4d0e910035e55fc14273f45502d9e26f0816f8cca841351d7de82bf20aa07b",
+      "distributed_sha256": "2d85d453b58b1bceb220b92edfa7155e094c865a5979ad49f7a60def3c31b82b"
+    },
+    "code/plot_loop1_illustrated.py": {
+      "original_figure_script_sha256": "6a05ca7479a09bb40b55875c71f5232f2b0044dcec29cb870762f6ed5a6e8a56",
+      "distributed_sha256": "0860ec04b0c62b781c97cf4fed561e17166d6f03abe99ccc203dac82c746ebba",
+      "role": "Offline aggregate figure renderer"
+    },
+    "code/prepare_illustrated_figure_data.py": {
+      "original_figure_script_sha256": "6a05ca7479a09bb40b55875c71f5232f2b0044dcec29cb870762f6ed5a6e8a56",
+      "distributed_sha256": "cf6fe10790da17a153432c4d967964923cc572bd21edc34bbc40adde826530d7",
+      "role": "Portable authorized-data aggregate preparation; no new estimates"
+    }
+  },
+  "package_only_changes": [
+    "Method-design paths use config/ instead of private notes/.",
+    "Original forecast config loader validates source hash and predictor definitions.",
+    "Public extraction creates its required directories.",
+    "Table builder targets output/paper-assets and also regenerates the sample appendix.",
+    "Method configurations describe post-analysis timing; numerical computation is unchanged.",
+    "Three new diagnostic configuration date labels use the correct local Asia/Shanghai date; original frozen plan hashes remain preserved outside this distribution."
+  ],
+  "aggregate_sources": {
+    "analysis/original-forecast/verified_listing_sensitivity/metrics.csv": "bf934c06a86bf223ff0efcfb6e9cb858cbe1c83ffed1bdabc1672dcf739b530e",
+    "analysis/original-forecast/verified_listing_sensitivity/paired_bootstrap.csv": "cdd683f885a85bf71d989788e8e74fffd47955d19b5d500369a985adc12761d8",
+    "analysis/original-forecast/verified_listing_sensitivity/sample_counts.csv": "2419037eaa4e8c1b204bd74500f7986b21a72044ec34a859a39852ec2f305466",
+    "analysis/original-forecast/nesting_order_diagnostic/metrics.csv": "aa1236035209e1235d76066c7baefb6203888b50d342c18aad10f76d96405e99",
+    "analysis/original-forecast/nesting_order_diagnostic/paired_bootstrap.csv": "ce1c2dbcb9870ee68ab746581878a0b67016f4a41ac5acd5710fbd7443bc0a4c",
+    "analysis/original-forecast/nesting_order_diagnostic/existing_accounting_annual_intervals.csv": "93215f6ba86eee149da3b09051e71bed4cf5acb6962095f415d844841ce04444",
+    "analysis/original-forecast/nesting_order_diagnostic/exclusion_ols_lad_rmse.csv": "41edf8c878b57c0bda4a7bd2a21c8714713d960881590d8a5c2fb3f77a842fb6",
+    "analysis/public-factorial/metrics.csv": "5f6ae0d7e29668c4a5f2e5bba745e3687a808b85622613136d1378d94330b74b",
+    "analysis/public-factorial/paired_bootstrap.csv": "f2fe29d67628a304d3b373660dab267f2b3536047a08184f1151cd2226eebc30",
+    "analysis/public-factorial/zero_audit.csv": "8649f8279a45b98ac61ce2dd387281329f1af918b49652b3188b966c02d28a72",
+    "analysis/public-factorial/zero_provenance.json": "975a38fdd5bd0348b0f5bd679182d43d3c21dd53e616a74a06b99b8b635b10b7",
+    "analysis/original-listing-audit/listing_aggregate_counts.csv": "97970484733ca3094c7f81b1be9613b8ab19c84e185cd46ca944dc89ff2bbe2a",
+    "analysis/original-listing-audit/prelisting_gap_counts.csv": "80ec3b16a6c52248a473150ec532f9ec08b46d8457e3097161a8f96b60687d10",
+    "analysis/original-listing-audit/origin_extreme_metrics.csv": "edaf9e2bd00c8a0b88c4cb0b0fe63b0a2064de097ac3af946cb5e4f496ed98d8",
+    "analysis/original-listing-audit/origin_extreme_training_thresholds.csv": "8ac7f9fc397e5d5da2cc866970bbf002b63fe703621c7fffeefcb77bfe3e9a40",
+    "analysis/original-forecast/fixed_forecast_decomposition/group_metrics.csv": "d9cc1a76ca6bcbf4c43f1870bd8ab477fb1fa256f9db48280a8a32ad85d5ccdb",
+    "analysis/original-forecast/fixed_forecast_decomposition/group_contrasts.csv": "7d7e1de0e6979fadb024bed085ac1d849d52aaa5d66708fcb29cac889620f78a",
+    "analysis/original-forecast/fixed_forecast_decomposition/roe_netprofit_sign_counts.csv": "8904d1ab7c5fb1bd23f71d2234c973206d6c9a20984574d831fe5c0eaf27ff76",
+    "analysis/original-forecast/fixed_forecast_decomposition/sign_agreement_summary.csv": "c232792d9d7cfb3ddf0e0641e0d7319afbb81b4dc556150e33ff3681937a0411",
+    "analysis/original-forecast/fixed_forecast_decomposition/net_profit_transitions.csv": "17365f7efa2b732c18ed160d853e49f9ea7f87591f10cb699aef29efd6888723",
+    "analysis/original-forecast/fixed_forecast_decomposition/raw_source_sign_sanity.json": "522807c659910be726d2d53aaca479fec7d9d1180dd11ca92609db5be1e897b2",
+    "analysis/original-forecast/fixed_forecast_decomposition/screened_existing_metrics.csv": "cc03bb077a1337e2b8f885c2bd1a601b203b019640ac7eaa8994127fbfcb0a9c",
+    "analysis/original-forecast/fixed_forecast_decomposition/screened_existing_asymmetry_gain.csv": "dba071f67a3127922be85713a14eeee2dec76e7e3f664c70c29560912f0c77f5",
+    "analysis/public-sign-constructs/public_origin_sign_metrics.csv": "2b774e7ea5fe1b98b4eda5bef5c6828103928ada28b1137532d2a68b3cc6d2f6",
+    "analysis/public-sign-constructs/public_origin_sign_contrasts.csv": "da8e83621bdc37bfe40ad43b42e3351a81bc12f77c471eeea8607cbd4b5dc981",
+    "analysis/public-sign-constructs/matched_roe_coverage.csv": "2c2920e52da06ac7093da6822604184ba920e4829a5bedda22b927ed261f4602",
+    "analysis/public-sign-constructs/matched_roe_difference_distribution.csv": "1caed19876bb7436bf85bb45758c18845b9a325a9720ca0acfd8fb17ef0402ad",
+    "analysis/public-sign-constructs/matched_roe_difference_tolerances.csv": "2040ae05f01ceefffdfeb51da6933fe9631efee651db6dae56657cf53d7f5275",
+    "analysis/public-sign-constructs/matched_roe_sign_counts.csv": "af6f9b5764631ff373b1e38f3807cfadd019845f8be7429de82c3c51f3ecc9e2",
+    "analysis/metrics.csv": "011e7e8bf42620e8c9c25329c8d2fc4194f021f03278bb5be6ae905605bba280",
+    "analysis/original-forecast/accounting_line_identity_diagnostic/annual_accounting_line_summaries.csv": "2a226aef9bfabb6d8beff358ed26ade0250e5dac4f652c74fb4fa1ed5828d9fb",
+    "analysis/original-forecast/accounting_line_identity_diagnostic/financial_profile_duplicate_counts.csv": "9b33396e1d4c756b00a7e7f67feeaa01c68d7ddaa382306ef2c858544b63bcd1",
+    "analysis/original-forecast/accounting_line_identity_diagnostic/security_name_overlap_counts.csv": "6aa4ace64775beabde4f576e25241df98a1bc2a0be1b34cfc305440a20c848ac",
+    "analysis/original-forecast/combined_line_sensitivity/metrics.csv": "bd2614d315539f0c5754478926e05061c46c7783064f8851cea7213133975b6d",
+    "analysis/original-forecast/combined_line_sensitivity/paired_bootstrap.csv": "218a48574753505156c86675ad6f90006f3ed0d45d42aedd145950c671f9abf8",
+    "analysis/original-forecast/legacy_ratios/metrics.csv": "67736924d85397bd794958a91c152353cb63a2987ca85310513b2d244b97d3e7",
+    "analysis/original-forecast/legacy_ratios/paired_bootstrap.csv": "24bb869483c6a939e6914379073534fd360b2e7aeae2f4526ea5daf9c82c7748",
+    "analysis/original-forecast/legacy_ratios/ratio_missingness.csv": "e75b96faef4b59735d54c1181ead229b75f244a82d65629d760065ba780db5e4",
+    "analysis/original-forecast/legacy_ratios/sample_counts.csv": "3e89826ada291b63aac4a24d9f8c5fe7c3d736f7c701cc155033b02c2567db9c",
+    "analysis/original-forecast/provenance_coverage_diagnostic/annual_asymmetry_first_gains.csv": "93987587967b11dbe1750ca592b42252ccadbefbadf0caedaee7bbc36b71a207",
+    "analysis/original-forecast/provenance_coverage_diagnostic/code_prefix_counts.csv": "8ca5a0681959b640a20448974baeca6ad111105af00390e189ec2b0de5a4b82d",
+    "analysis/original-forecast/provenance_coverage_diagnostic/export_year_distributions.csv": "97eb811723ae3dfd5936ff90ed0a23e22ca203e65c29088e8ebef23b2455b342",
+    "analysis/original-forecast/provenance_coverage_diagnostic/first_last_export_year_counts.csv": "47de31abef625db9279cf273b14ad2027fc1b7d29358b3b047352b3c3b6f389e",
+    "analysis/original-forecast/provenance_coverage_diagnostic/missing_roe_audit_summary.json": "ae48291bdc003c852888c2b87eb32f6d820abea4b38dcc52224494e4f66a7013",
+    "analysis/original-forecast/provenance_coverage_diagnostic/missing_roe_profit_sign_counts.csv": "36f15f10dac9a8b496562b840bedb175ccc00a3fdfcf4fd1eb572fbd4cc3a44e",
+    "analysis/original-forecast/provenance_coverage_diagnostic/profit_recovery_by_provenance.csv": "ec99c11201064ef80f0193b3760573e0b4fb19f472d0f5486459d46a5eb6c351",
+    "analysis/original-forecast/provenance_coverage_diagnostic/sign_provenance_fixed_forecasts.csv": "efad1a84cfa26bdb5b796c0488188f69d324284a2ca778a13c92dac824355ac1",
+    "analysis/original-forecast/provenance_coverage_diagnostic/source_code_coverage.csv": "444b33ac2390887149e0ff9eeb6b1ef85480a9bc3f1339e95a4991c579a91c48",
+    "analysis/original-forecast/roe_missingness_audit.json": "9c10e0d0e1ca95b0368ef7b21651795641848a93cbbb00cfec6a7385a4656f49",
+    "analysis/original-forecast/transparent_main/clipped_persistence_diagnostic/metrics.csv": "9720b6901a76b62b9ac0e672983c0f1271030aa890f0abf496abc0d1c8960771",
+    "analysis/original-forecast/transparent_main/clipped_persistence_diagnostic/paired_bootstrap.csv": "d42a6478e60664ca4d943bca696c4e251656ec372d8988bb941f88b4a1ef339b",
+    "analysis/original-forecast/transparent_main/descriptive_statistics.csv": "87b99fa3d17ae35d6010718828ed430ab05e543519a32f7224fc805f03a2e2ff",
+    "analysis/original-forecast/transparent_main/industry_controls/metrics.csv": "5b1fd1a770de9af32f7c2d5b33f347e2d0befc9862b676f1fa9fd4dab406ddc1",
+    "analysis/original-forecast/transparent_main/industry_controls/paired_bootstrap.csv": "c39d30b9feb38f8f2ef26571a6dc52f141869968e7cf9a3211ee3ce9a8806157",
+    "analysis/original-forecast/transparent_main/metrics.csv": "066238396097107a24045ecfce306ab17a7bbbc83e071729ab6ed9155744ec1d",
+    "analysis/original-forecast/transparent_main/paired_bootstrap.csv": "96118099b33b09456c0e2605746fa871186309f822a36672cd73b045ab72af27",
+    "analysis/original-forecast/transparent_main/persistence_coefficients.csv": "8d36d74937b1b862ee8e100d645538f8c969e8318495579985d8f29d750369ed",
+    "analysis/original-forecast/transparent_main/ratio_missingness.csv": "ac5aaacab3a7c1940dc3fac5a2942d8c78d524a26981a273d1872cc5f1659c5b",
+    "analysis/original-forecast/transparent_main/sample_counts.csv": "3e89826ada291b63aac4a24d9f8c5fe7c3d736f7c701cc155033b02c2567db9c",
+    "analysis/original-forecast/transparent_main/sign_transitions.csv": "39f4d25f2ddb8a5fe5a34e918df002949b9c30435d45efcec01d48a199131116",
+    "analysis/original-forecast/transparent_main/without_000982_refit/metrics.csv": "40f9d95a16989c2723a8c189caecbf4ad8f049c57373c6e1751148aab1e1578f",
+    "analysis/original-forecast/transparent_main/without_000982_refit/paired_bootstrap.csv": "32fc1c4ca50bbf50f343a41bc44253bf2aaddf5d7b2ffe7321130da25f161d5b",
+    "analysis/paired_bootstrap.csv": "0db13690ae6e4071dd0d77abe74857f8cabe8533db5e2fedca9da835cdd2521f",
+    "analysis/public-sector-signal-sign/primary_signal_roe_sign_crosstab.csv": "807ffc27d708c134bcfa4bd5096d5efcfec7feea525fe14d3f38c8358ae67afe",
+    "analysis/public-sector-signal-sign/primary_signal_roe_sign_summary.csv": "6a7f3e90959da4394859e1541f91a2ba471a548f7d0fec8246cb312df696116e",
+    "analysis/public-sector-signal-sign/public_margin_zero_by_industry_status.csv": "12a5655fdf1f76e07f5ed79eec09f5cf351a0b86a1e7b875c7160fc8b3686e9a",
+    "analysis/public-sector-signal-sign/public_margin_zero_by_original_industry.csv": "98e385886b9894692d78036b97055e964d8dd1de983c1d91ce28a463b35cc796",
+    "analysis/public-sector-signal-sign/public_sector_metadata.json": "08041b4a8d4f74561e608494eca78fc42fd12bd9b91afebe660f3ea523e1da33",
+    "analysis/robustness_refit.csv": "9f69cfadb9a0dfdf9e2f7ed5a66e0f6ef6aa17c33bb6079f97e9501f90737603",
+    "analysis/sample_counts.csv": "8204f04e6c7318ac5c70cb06861494e06d3701750f8f82cec13dda2f1e073f2a",
+    "analysis/original-forecast/membership_missingness_diagnostic/blank_roe_pair_membership_summary.csv": "45e8c4975de170d397b2ca12ee590cd5e121b092bb14618a39f24099cb8a58ed",
+    "analysis/original-forecast/membership_missingness_diagnostic/blank_roe_pairs_by_year_membership_profit_sign.csv": "5f57e4f06770dab7f48d4b940770d917231e691aaaba4034d5d6862a5db56511",
+    "analysis/original-forecast/membership_missingness_diagnostic/code_name_mapping_counts.csv": "ea6cc66e09313f857105293ef45e69c2e8f4883bccd70c7ee5d6b9540a6c578c",
+    "analysis/original-forecast/membership_missingness_diagnostic/economic_profile_duplicate_counts.csv": "8a0b342aa03b5d94606a9f90f2a7ad47ad039e88d2b701d5fe66487f9b3b5b53",
+    "analysis/original-forecast/membership_missingness_diagnostic/main_code_prefix_counts.csv": "9cfeff18098bbed4f391ec2cdc5cf182e3a3d1b555a4265acd7cdbb836136004",
+    "analysis/original-forecast/membership_missingness_diagnostic/main_group_counts.csv": "2fb89cc6d0d13a992c156488c4e564a9c5cb310c1561d8603712bf5c71e8b509",
+    "analysis/original-forecast/membership_missingness_diagnostic/main_size_implied_equity_distributions.csv": "744703285d299c9feee32247da5dfbb9dde9d76ef9225f4111aceeaabfe2fd9c",
+    "analysis/original-forecast/membership_missingness_diagnostic/summary.json": "d1a397cf0d859e7429fde44253f789fdb6aa4e72c038576b8945dceedccdcab6",
+    "analysis/original-forecast/membership_missingness_diagnostic/unique_blank_roe_cells_by_year_membership_profit_sign.csv": "18a97ea25ab185dfc3753c6f948064abbe55392c4d493f624c91d62225a54b8e",
+    "analysis/original-forecast/membership_missingness_diagnostic/unknown_industry_by_year_membership_profit_sign.csv": "a3eb45e91145cc5a200b5043e2d378ae8fab462b105e07f9378098f69c3a8268",
+    "analysis/original-forecast/membership_missingness_diagnostic/unknown_industry_membership_summary.csv": "834f7c8c83fe074674932f91bd1ae46cbf0770c61a3dcf0a70f8490194313d6d",
+    "analysis/original-forecast/membership_missingness_diagnostic/unmatched_export_year_counts.csv": "478a61cec1b3b5ccfb493f3d0334bbf8371ea679d8e888323779fd3e1bcb9493",
+    "analysis/original-forecast/membership_missingness_diagnostic/unmatched_first_last_year_counts.csv": "c62929c3962803c2dfd9a514eef031efa945ee597f5a31ec701f9a68c4aaf5bd",
+    "analysis/original-forecast/loss_recovery_availability_diagnostic/recovery_by_target_roe_availability.csv": "4c64105d075519f34082e33daa0e6b93e9e0f78684db3bbbf1d1edf38b08287b",
+    "analysis/original-forecast/loss_recovery_availability_diagnostic/summary.json": "bfd5486b835c20aba560abbb7ce9c5b7f1cdb78bf73c9ad8c930220e3ddd03e7",
+    "analysis/original-forecast/income_identity_diagnostic/existing_asymmetric_lad_coefficients.csv": "19865ab2b9774a602fbfa73c9f90a78f88c20c1123acf26c5d851a50f919f5f1",
+    "analysis/original-forecast/income_identity_diagnostic/identity_rank_singular_values.csv": "353ff3c8551b26a28720a331a9e344cf8b622ba0aa494cb29908930a2946dd33",
+    "analysis/original-forecast/income_identity_diagnostic/negative_origin_tail_summary.csv": "552c079c35c7c85c3c56d2d0de57ebddc012d5e586a9b5d9411385ce8a2e2973",
+    "analysis/original-forecast/income_identity_diagnostic/preprocessing_identity_residuals.csv": "9e23fb74b84e98cf483c96478bd8f2da221fd6dd706aecd1210ee3c77f1fc23e",
+    "analysis/original-forecast/income_identity_diagnostic/preprocessing_row_groups.csv": "cd898f6bf6abc206665e437e0089e41361ab2e524fcae0f3cfa8324a16d9fb21",
+    "analysis/original-forecast/income_identity_diagnostic/primary_design_reconstruction.csv": "f25fa507440bfaaa6e0ccded27ff2f30837da5154197604f138a678e23592a2b",
+    "analysis/original-forecast/income_identity_diagnostic/raw_identity_availability.csv": "0bd07dc4642d20a363d4ea77020989f7f8db5f17a3f2219e2bf6b64e257b5050",
+    "analysis/original-forecast/income_identity_diagnostic/raw_identity_residuals.csv": "559f522e0efea6bf083bd5d799e23244c4049328c8a2832e2cdb8cb8bee1c707",
+    "analysis/original-forecast/income_identity_diagnostic/summary.json": "87238a575a9b6a9d88c38d8440a734ab683c41970c1d372e1b20e8af1b29234a",
+    "analysis/original-forecast/drop_np_sensitivity/metrics.csv": "be3f92f3c5b7640d01bded667fa4c50ea3ba492d804112e778b818774a3fef17",
+    "analysis/original-forecast/drop_np_sensitivity/paired_bootstrap.csv": "d7ebcfe1957e986f67a43ee9eb74485d343e542bfddfdb7355e4bbb6d88ebcf2",
+    "analysis/original-forecast/drop_np_sensitivity/run_manifest.json": "b507a4fa075e6d1f646893c4e5473a598f36ea7a78a4a5fd31c1c5b7aa1d795f",
+    "analysis/original-forecast/drop_np_sensitivity/summary.json": "fe4bf6425552e009c73a93362dce6e18006661975ac69b15598985a3efbef9b3",
+    "analysis/original-forecast/sign_interaction_diagnostic/group_maes.csv": "11b2a1f7cd9551f392e7601569a04f5c8f2d95326cb5288b99d5e897e5329241",
+    "analysis/original-forecast/sign_interaction_diagnostic/existing_component_checks.csv": "965ebed7aed8f8bfe87055a617cbc21aa0a91223148a1379678144413bcf144f",
+    "analysis/original-forecast/sign_interaction_diagnostic/interaction_intervals.csv": "9a7d6e2d24c854b274e3efc48bee86fe42fe0cfe0fe64f9e28f8b3b6413f95b0",
+    "analysis/original-forecast/sign_interaction_diagnostic/summary.json": "d2d7a52ec8baf4c5dc179c777d4a9f80d239ae1d70daa1ca8a351907ebebdcb3",
+    "analysis/original-forecast/missing_target_loss_bound/annual_forecast_gap_sums.csv": "3452ebfeb63068b11c5004c707bd8e7b18a340cae04bad9b4fa551a90683ecd9",
+    "analysis/original-forecast/missing_target_loss_bound/availability_counts.csv": "242a29809ce467fed9dc66ff36f30d6f9096ea0e564191601e9bfe5c21e2b342",
+    "analysis/original-forecast/missing_target_loss_bound/excluded_forecast_summaries.csv": "b88dc3e19df8f34b7380c669136b76ab5d80d37546b2f3473b071e89bf157468",
+    "analysis/original-forecast/missing_target_loss_bound/excluded_input_availability.csv": "a4bd8976387846918fe58607a158f54ca7bd44563ace62b5dcdfbe7f279403cc",
+    "analysis/original-forecast/missing_target_loss_bound/gain_bounds.csv": "a1b59eb1d4dce8e00c7f1bde7840fba6f8342dcd2d63711c086bc43b44907a14",
+    "analysis/original-forecast/missing_target_loss_bound/retained_forecast_reconstruction.csv": "ee3f3c810f2a89d1389c89260dbefdb4aaeff018044dc4bf1075880536ab577a",
+    "analysis/original-forecast/missing_target_loss_bound/summary.json": "873d887312571d29a4d564bac6d7895b451db65f5238d45916dbb59e55653fc7"
+  },
+  "method_configuration_provenance": {
+    "config/original-provenance-coverage.txt": {
+      "original_frozen_design_sha256": "8764b2b6c17d68aa3f348c1135f0fbd06b6a43624ba6be2cb633edfa3c97e368",
+      "distributed_sha256": "3d1f552dd11644f8b126c27273ceb9c0832e83568ed5c53871b611035306ea77",
+      "timing": "Post-analysis plan specified before its additional computation.",
+      "timezone_label_corrected": true
+    },
+    "config/original-accounting-lines-identity.txt": {
+      "original_frozen_design_sha256": "0559d87ab2013b8d2f1b51b956d42e05596daacc7d3756895506f047d6a4ea44",
+      "distributed_sha256": "61b6c97bc33a396bf0cb39049bac5287b696cf2fe4eed3eca17dce2c4fbaf298",
+      "timing": "Post-analysis plan specified before its additional computation.",
+      "timezone_label_corrected": true
+    },
+    "config/original-combined-line-sensitivity.txt": {
+      "original_frozen_design_sha256": "69cfe5d01a3fe55c8e311e359f16581786a875a3954980f887053b3e4622b6f8",
+      "distributed_sha256": "b60c9c845297c02416f06584b5ea7a65913102a8640f1a60478c557e2b256609",
+      "timing": "Post-analysis plan specified before its additional computation.",
+      "timezone_label_corrected": true
+    },
+    "config/public-sector-signal-sign.txt": {
+      "original_frozen_design_sha256": "9a3cf07f027c7f6034ed3b898dbdad3fef1bdd264130294e0e0885a9c2be14e6",
+      "distributed_sha256": "9a3cf07f027c7f6034ed3b898dbdad3fef1bdd264130294e0e0885a9c2be14e6",
+      "timing": "Post-analysis plan specified before its additional computation.",
+      "timezone_label_corrected": false
+    },
+    "config/original-membership-missingness.txt": {
+      "original_frozen_design_sha256": "62fb66170ab8f9d29ca64cae01dcd00a7df3bcc80e977081eee80ab1fba35b6f",
+      "distributed_sha256": "62fb66170ab8f9d29ca64cae01dcd00a7df3bcc80e977081eee80ab1fba35b6f",
+      "timing": "Post-analysis plan specified before its additional computation; original UTC timestamp retained exactly.",
+      "timezone_label_corrected": false
+    },
+    "config/original-loss-recovery-availability.txt": {
+      "original_frozen_design_sha256": "70831507ea027523278a130f225739c2362fa5202d47fd46400a8a557420f3af",
+      "distributed_sha256": "70831507ea027523278a130f225739c2362fa5202d47fd46400a8a557420f3af",
+      "timing": "Post-analysis plan specified before its additional computation; original UTC timestamp retained exactly.",
+      "timezone_label_corrected": false
+    },
+    "config/original-income-identity-drop-np.txt": {
+      "original_frozen_design_sha256": "1edb3724a23ee454ab9c21ce43f08223e124e2800c037e9be23925c66ae2607d",
+      "distributed_sha256": "1edb3724a23ee454ab9c21ce43f08223e124e2800c037e9be23925c66ae2607d",
+      "timing": "Post-analysis plan and pre-computation addendum specified before diagnostics or new fits; original UTC timestamps retained exactly.",
+      "timezone_label_corrected": false
+    },
+    "config/original-sign-interaction.txt": {
+      "original_frozen_design_sha256": "4c454de285326a41ac1bb4d9f520a5c42e9ddc283d58c8f309fdbea03c9aa62e",
+      "distributed_sha256": "a2c8fb2fdbbae3030f2a0f4c5037856acf6583e755aa372d18eeca49f7b95e2f",
+      "timing": "Post-analysis plan frozen before computation; exact original UTC timestamp retained.",
+      "timezone_label_corrected": false,
+      "distribution_adjustment": "Omitted only the final internal assessment-file routing line; all scientific specifications and timing unchanged."
+    },
+    "config/original-missing-target-loss-bound.txt": {
+      "original_frozen_design_sha256": "9b41b8f77835a0ba182284c3e4c5013412d2913953df649c58c76c1206bbd325",
+      "distributed_sha256": "da1de85ec22a2bbb17353496da803a4a9be7f0bceda979361bc71425851ff2bd",
+      "timing": "Post-analysis plan frozen before computation; exact original UTC timestamp retained.",
+      "timezone_label_corrected": false,
+      "distribution_adjustment": "Omitted only the final internal assessment-file routing line; all scientific specifications and timing unchanged."
+    }
+  }
+}

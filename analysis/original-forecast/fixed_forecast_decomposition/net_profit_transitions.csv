@@ -1,0 +1,3 @@
+group,n,origin_net_profit_negative_n,origin_net_profit_positive_n,origin_net_profit_zero_n,origin_net_profit_missing_n,origin_net_profit_infinite_n,negative_origin_next_profit_missing_n,negative_origin_next_profit_infinite_n,observed_negative_origin_transition_denominator,negative_to_positive_n,negative_to_zero_n,negative_to_negative_n,negative_to_nonnegative_pct
+overall,15258,1520,13738,0,0,0,0,0,1520,1058,0,462,69.60526315789474
+negative_roe_origins,1520,1520,0,0,0,0,0,0,1520,1058,0,462,69.60526315789474

@@ -1,0 +1,4 @@
+scope,rows,securities,nonmissing_name_strings,missing_name_rows,codes_with_no_observed_name,codes_with_exactly_one_observed_name,codes_with_multiple_observed_names,names_with_one_code,names_with_multiple_codes,same_year_name_groups_with_multiple_codes
+all_source,34799,4445,4441,5,2,4443,0,4439,2,9
+finite_roe_source,33061,4336,4334,0,0,4336,0,4332,2,6
+main_2015_2019_origins,15258,3542,3542,0,0,3542,0,3542,0,0

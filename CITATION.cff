@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+type: software
+message: "Please cite these reproduction materials using the metadata below."
+title: "Profitability Persistence and Accounting Information in Chinese Firms: Reproduction Materials"
+repository-code: "https://github.com/williamguey/profitability-persistence-china"
+authors:
+  - family-names: "Jiang"
+    given-names: "Lilian Chien"
+    affiliation: "Santander Brasil"
+  - family-names: "Guey"
+    given-names: "William"
+    affiliation: "Department of Industrial Engineering, Tsinghua University, Beijing, China"
+  - family-names: "Qiao"
+    given-names: "Ziyi"
+    affiliation: "School of Economics and Management, Tsinghua University, Beijing, China"
+  - family-names: "de Moura"
+    given-names: "Vitor D."
+    affiliation: "School of Social Sciences, Tsinghua University, Beijing, China"
+  - family-names: "Ma"
+    given-names: "Yushi"
+    affiliation: "Department of War Studies, King's College London, University of London, London, United Kingdom"
+  - family-names: "Gomes"
+    given-names: "José O."
+    affiliation: "Department of Industrial Engineering, Federal University of Rio de Janeiro, Rio de Janeiro, Brazil"
+keywords:
+  - profitability persistence
+  - accounting information
+  - return on equity
+  - Chinese firms
+  - least absolute deviations

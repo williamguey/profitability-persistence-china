@@ -1,0 +1,27 @@
+POST-ANALYSIS sensitivity requested after listing-date audit and primary results.
+
+This is a narrower deposited-reference cohort, not a correction silently replacing
+the primary population. Starting with the original-source transparent-eight eligible
+pairs, retain an origin only when its stock_code matches the existing public panel
+listing-date reference, its date parses successfully, and origin year >= listing
+year. Drop unmatched/missing dates and origins before the listing year from BOTH
+training and evaluation. No new external listing dataset is acquired. A year-level
+screen does not establish point-in-time availability or exclude post-delisting
+accounts; the word verified here means screened against this deposited reference,
+not an independent official exchange/date audit.
+
+All other primary rules remain: finite raw current/next-year ROE, positive finite
+assets for ratios, training-only median imputation and 1/99 clipping, standardizing
+and missing flags, raw targets, origin-year known nonfinancial classifications,
+expanding training targets strictly before each evaluation target. Origins begin
+2010 and target folds are 2015--2020. Every model uses the same restricted rows.
+Run historical mean/median, raw current-ROE persistence, and OLS/LAD with linear,
+sign-asymmetric and sign-asymmetric-plus-transparent-eight designs. No industry
+controls or additional model selection. Primary evaluation remains 2015--2019;
+2020 is separate. Pairwise security-cluster bootstrap uses 2,000 draws and seed
+20261025, conditional on fitted predictions, including sign groups and 2020.
+
+The comparison with the full original sample changes both listing eligibility and
+reference coverage; it cannot isolate only the influence of pre-IPO rows. Its
+codes come from the public deposited cohort, but its outcome and predictors remain
+the original-source accounting definitions. Do not call it independent replication.

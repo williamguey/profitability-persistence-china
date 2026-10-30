@@ -1,0 +1,10 @@
+scope,profile,evaluated_rows,duplicate_rows,duplicate_groups,distinct_codes_in_duplicate_rows
+all_source,reduced_complete,34282,1856,920,176
+all_source,full_including_missing_patterns,34799,541,19,435
+all_source,full_complete,31473,0,0,0
+finite_roe_source,reduced_complete,33061,0,0,0
+finite_roe_source,full_including_missing_patterns,33061,0,0,0
+finite_roe_source,full_complete,31473,0,0,0
+main_2015_2019_origins,reduced_complete,15258,0,0,0
+main_2015_2019_origins,full_including_missing_patterns,15258,0,0,0
+main_2015_2019_origins,full_complete,14645,0,0,0

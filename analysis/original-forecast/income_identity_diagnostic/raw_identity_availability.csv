@@ -1,0 +1,5 @@
+scope,rows,securities,five_lines_complete_n,positive_finite_assets_n,common_complete_positive_assets_n,net_profit_unavailable_n,operating_profit_unavailable_n,non_operating_income_unavailable_n,non_operating_expenses_unavailable_n,income_tax_expense_unavailable_n
+all_source,34799,4445,33858,34281,33857,517,517,695,625,681
+known_nonfinancial_source,32573,4247,32162,32571,32161,1,1,173,107,158
+eligible_origins,28035,3774,27731,28035,27731,0,0,120,92,109
+main_2015_2019_origins,15258,3542,15039,15258,15039,0,0,78,69,85

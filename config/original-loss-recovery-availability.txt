@@ -1,0 +1,9 @@
+Frozen UTC: 2026-10-24T22:11:32.227365+00:00
+
+Post-analysis descriptive extension, specified before computation. No new fits, outcomes imputed, data changed, or primary cohort revisions.
+
+Start from raw origin records foryears2014--2018 (candidate forecasttargets2015--2019), with a known nonfinancial originindustry and finite raw originROE<0. Join the exact same security's next calendar year. Distinguish retained candidates with finite targetROE, existing next-year records whose targetROE is blank, any infinite targetROE, and absence of a next-year source record. The latter is a separate source-coverage category, not a blank worksheetROEcell.
+
+For each target-availability category, report originrows, distinctsecuritycounts, observedpositive/zero/negative nextyearnetprofit, missing/nonfiniteprofitcounts, finiteprofitdenominator, and positive/nonnegative recoverypercentage among availableprofit. Also report eachtargetyear and existingdeposit-membership provenance if matched byoriginyear. Assert the retained pooledcount1520, positive1058, negative462, agreeing with the published retained-sample rate. No bootstrap or significance test.
+
+This compares observed conditional profit transitions under targetROE availability; it cannot establish reasons for missingROE, recover unobservedprofits, identify an equityscreen, or generalize the retained recovery rate to all listed firms. Persist only aggregate outputs in analysis/original-forecast/loss_recovery_availability_diagnostic; capture code/design/inputhashes and verifyinputsunchanged.

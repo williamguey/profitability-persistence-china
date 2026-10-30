@@ -1,0 +1,56 @@
+{
+  "status": "post-analysis fixed-forecast sign interaction; no refits",
+  "started_utc": "2026-10-24T23:31:12.707892+00:00",
+  "completed_utc": "2026-10-24T23:31:12.999256+00:00",
+  "code_sha256": "c7cab27fb0e4d6656debb60033923456ed6ea52d4cb70fe303aee00c1bbfd750",
+  "design_sha256": "4c454de285326a41ac1bb4d9f520a5c42e9ddc283d58c8f309fdbea03c9aa62e",
+  "input_sha256": {
+    "analysis/original-forecast/nesting_order_diagnostic/predictions.csv": "6065b146128366e5d5a9ed0ee524a125745c9a333e5a961ca027197c4491a5f2",
+    "analysis/original-forecast/fixed_forecast_decomposition/group_metrics.csv": "d9cc1a76ca6bcbf4c43f1870bd8ab477fb1fa256f9db48280a8a32ad85d5ccdb",
+    "analysis/original-forecast/fixed_forecast_decomposition/group_contrasts.csv": "7d7e1de0e6979fadb024bed085ac1d849d52aaa5d66708fcb29cac889620f78a"
+  },
+  "inputs_unchanged": true,
+  "cells": [
+    "lad_ar",
+    "lad_linear_signals",
+    "lad_piecewise",
+    "lad_signals"
+  ],
+  "interaction_weights": [
+    -1.0,
+    1.0,
+    1.0,
+    -1.0
+  ],
+  "estimand": "Accounting-second minus accounting-first within each raw-origin-ROE sign group; also asymmetry-second minus asymmetry-first.",
+  "bootstrap": "Within-sign sorted security clusters; numpy default_rng seed reset for each group; 2000 joint draws; percentile 95% interval.",
+  "conditional_scope": "Fixed forecasts and realized calendar years; no refitting, between-sign-group difference test, causal coefficient interpretation, or multiplicity adjustment.",
+  "draw_fingerprints": {
+    "negative": {
+      "four_joint_mae_draws_float64_le_sha256": "6705ee92e60ba3c30ce31d2a214d2f32520f7faf993debe3add7c7a06b9b9b73",
+      "interaction_draws_float64_le_sha256": "d8107c0d60f2c40a108d179b86ae703f0259d2dd3bcaf2dfbd97d63d26ca7527"
+    },
+    "nonnegative": {
+      "four_joint_mae_draws_float64_le_sha256": "c3d69632116a68bad04f19842864bcd8d5647797a1a36bcffd22303d7c84311e",
+      "interaction_draws_float64_le_sha256": "62d805c1058d38ff3684ef6e53033ddd9ce6469c2b1d4956aa9ee2f55136ce9d"
+    }
+  },
+  "checks": {
+    "negative": {
+      "max_existing_component_difference": 4.440892098500626e-16,
+      "accounting_identity_max_error": 0.0,
+      "asymmetry_identity_max_error": 0.0,
+      "nesting_path_sum_max_error": 0.0
+    },
+    "nonnegative": {
+      "max_existing_component_difference": 9.020562075079397e-17,
+      "accounting_identity_max_error": 0.0,
+      "asymmetry_identity_max_error": 0.0,
+      "nesting_path_sum_max_error": 0.0
+    }
+  },
+  "pooled_weighted_point_identity_error": 6.279698983036042e-15,
+  "existing_component_intervals_checked": 8,
+  "row_level_data_distributed": false,
+  "primary_outputs_modified": false
+}

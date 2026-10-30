@@ -1,0 +1,52 @@
+{
+  "source_sha256": "9cb04bd1d5ed44383d7e54351c8e8c7271797ccd74ecac3934e06302141dd75f",
+  "worksheets": [
+    {
+      "worksheet": "全部数据",
+      "column_count": 160,
+      "sector_header_matches": [],
+      "first_four_headers": [
+        "stock code",
+        "stock name",
+        "listing date",
+        "stock_return\n[start date] 2008-12-31\n[end date] 2020-12-31\n[单位] %↓"
+      ]
+    },
+    {
+      "worksheet": "10倍涨幅股票组",
+      "column_count": 160,
+      "sector_header_matches": [],
+      "first_four_headers": [
+        "stock code",
+        "stock name",
+        "listing date",
+        "stock_return\n[start date] 2008-12-31\n[end date] 2020-12-31\n[单位] %↓"
+      ]
+    },
+    {
+      "worksheet": "1-10倍涨幅股票组",
+      "column_count": 160,
+      "sector_header_matches": [],
+      "first_four_headers": [
+        "stock code",
+        "stock name",
+        "listing date",
+        "stock_return\n[start date] 2008-12-31\n[end date] 2020-12-31\n[单位] %↓"
+      ]
+    },
+    {
+      "worksheet": "小于1倍涨幅股票组",
+      "column_count": 160,
+      "sector_header_matches": [],
+      "first_four_headers": [
+        "stock code",
+        "stock name",
+        "listing date",
+        "stock_return\n[start date] 2008-12-31\n[end date] 2020-12-31\n[单位] %↓"
+      ]
+    }
+  ],
+  "explicit_sector_field_found_in_scanned_headers": false,
+  "inspection_scope": "Worksheet names and first-row column headers; no name-based sector inference.",
+  "external_classification": "Original accounting workbook industry, matched on exact security code and origin year; unknowns retained."
+}

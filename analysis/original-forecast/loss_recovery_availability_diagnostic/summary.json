@@ -1,0 +1,25 @@
+{
+  "status": "post-analysis descriptive extension; no model fits or imputations",
+  "created_utc": "2026-10-24T22:12:28.839363+00:00",
+  "code_sha256": "6e8c52c0a1ba5dc7e170ee7559802ad06d4764ea8a9560679421e26a0ee68baa",
+  "design_sha256": "70831507ea027523278a130f225739c2362fa5202d47fd46400a8a557420f3af",
+  "definition_helper_sha256": "dfe96985fe14e26c948c690890ea8fad8dfc0094398786e0cb98feefbb3e6458",
+  "input_sha256": {
+    "data/original-private/original_panel.csv": "b6290b3629760ef272f75c95e78d1b9f4029e1d4dfd152617135def5a3152b23",
+    "data/processed/peng2022_panel_rawvalues.csv": "fac540da0d99b8dc057510b4864709be84f4e7a4fe4a9595e81776bad4902d8e"
+  },
+  "inputs_unchanged": true,
+  "population": "Known nonfinancial 2014--2018 origins with finite negative ROE, exact next-calendar-year same-security join.",
+  "candidate_origins": 1583,
+  "candidate_securities": 1023,
+  "finite_target_roe_retained_origins": 1520,
+  "availability_categories": [
+    "finite_target_roe_retained",
+    "blank_target_roe_existing_record",
+    "nonfinite_target_roe_existing_record",
+    "no_next_year_source_record"
+  ],
+  "no_next_year_record_interpretation": "Source coverage absence, distinct from an existing blank ROE cell; no next-year profit inferred.",
+  "recovery_denominator": "Finite observed next-year net profit within each category; unavailable values explicitly counted, never imputed.",
+  "scope": "Conditional observed profit transitions only; no identified missingness cause, equity rule, population recovery rate, or regulatory mechanism."
+}

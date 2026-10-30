@@ -1,0 +1,46 @@
+{
+  "counts": {
+    "known_nonfinancial_consecutive_pairs": 28439,
+    "excluded_pairs": 404,
+    "retained_finite_roe_pairs": 28035,
+    "origin_missing_only_pairs": 97,
+    "target_missing_only_pairs": 153,
+    "both_origin_and_target_missing_pairs": 154,
+    "origin_missing_slots": 251,
+    "target_missing_slots": 307,
+    "origin_positive_infinity_slots": 0,
+    "origin_negative_infinity_slots": 0,
+    "target_positive_infinity_slots": 0,
+    "target_negative_infinity_slots": 0,
+    "origin_infinite_only_pairs": 0,
+    "target_infinite_only_pairs": 0,
+    "both_origin_and_target_infinite_pairs": 0,
+    "infinite_roe_values_anywhere_in_original_panel": 0,
+    "unique_origin_missing_source_cells": 251,
+    "unique_target_missing_source_cells": 307,
+    "unique_missing_source_cells_across_both_roles": 361
+  },
+  "source": "Preserved supplied workbook, Base Tese sheet, ROE column F",
+  "cell_audit": {
+    "stored_cells": {
+      "checked_unique_cells": 361,
+      "openpyxl_cell_types": {
+        "n": 361
+      },
+      "cell_values": {
+        "None (blank)": 361
+      }
+    },
+    "cached_values": {
+      "checked_unique_cells": 361,
+      "openpyxl_cell_types": {
+        "n": 361
+      },
+      "cell_values": {
+        "None (blank)": 361
+      }
+    }
+  },
+  "reason_for_absence": "Not established by the supplied cells or this audit.",
+  "primary_outputs_modified": false
+}

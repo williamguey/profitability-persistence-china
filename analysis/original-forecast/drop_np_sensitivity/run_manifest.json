@@ -1,0 +1,35 @@
+{
+  "status": "post-analysis omission sensitivity; six exact LAD fits only",
+  "started_utc": "2026-10-24T22:41:27.097463+00:00",
+  "executing_code_sha256": "40fb498228283a726004351835fc3a619183418af4d9cfbe0002d2c10ba7e2ee",
+  "design_sha256": "1edb3724a23ee454ab9c21ce43f08223e124e2800c037e9be23925c66ae2607d",
+  "input_sha256": {
+    "analysis/original-forecast/transparent_main/eligible_pairs.csv": "0ac8bc8a942569029325ce967b06a8b781377597e94ae69502aece4b1dbd2bb4",
+    "analysis/original-forecast/transparent_main/predictions.csv": "f5a63bc07903549acd418acc3d892520c45de675b52d8c2e9d39004eb72d3409",
+    "analysis/original-forecast/transparent_main/fit_records.json": "d411b1644d06fbab5784eb137b94c8b590bc6a46caf5bf4a1f82bebdf48131cb",
+    "analysis/original-forecast/income_identity_diagnostic/summary.json": "87238a575a9b6a9d88c38d8440a734ab683c41970c1d372e1b20e8af1b29234a",
+    "analysis/original-forecast/nesting_order_diagnostic/paired_bootstrap.csv": "ce1c2dbcb9870ee68ab746581878a0b67016f4a41ac5acd5710fbd7443bc0a4c"
+  },
+  "helper_sha256": {
+    "code/analyze_original.py": "9bd1007857e889710b0dbd9e8cb94a16fe53e9e93784f4198429d9a6ba6189b0",
+    "code/analyze_original_combined_lines.py": "6e088fe0862ac697db588bb214de081fe5a91cd5c6bf3526b22568110ca630d0"
+  },
+  "signal_order": [
+    "x1",
+    "x2",
+    "x3",
+    "x4",
+    "x6",
+    "x7",
+    "x8"
+  ],
+  "conditional_sensitivity_decision": {
+    "main_complete_rows": 15039,
+    "main_asset_scaled_le_1e_8_n": 15027,
+    "fraction": 0.9992020746060243,
+    "predeclared_minimum_fraction": 0.9,
+    "drop_np_sensitivity_gate_met": true
+  },
+  "primary_models_modified": false,
+  "interpretation": "Seven named ratios after dropping NP/assets; no assertion of seven independent dimensions, causal earnings-component contributions, or primary model selection."
+}

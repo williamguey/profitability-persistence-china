@@ -1,0 +1,3 @@
+scope,codes,source_rows,codes_last_export_before_2020,codes_in_2020_export,codes_with_internal_year_gaps,internal_missing_years_total,source_finite_roe_n,source_negative_roe_n,source_negative_roe_pct,source_missing_roe_n,source_finite_profit_n,source_negative_profit_n,source_negative_profit_pct,main_pairs,main_codes,main_negative_origins_n,main_negative_origin_pct
+all_source_codes,4445,34799,61,4384,3,10,33061,3378,10.217476785336196,1738,34282,3657,10.667405635610525,15258,3542,1520,9.961987154279722
+unmatched_main_codes,347,3480,22,325,0,0,3192,882,27.631578947368425,288,3398,1016,29.899941141848146,1460,347,369,25.273972602739725

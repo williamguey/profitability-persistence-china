@@ -1,0 +1,40 @@
+{
+  "status": "post-analysis bounded descriptive audit; no data acquisition or model fits",
+  "created_utc": "2026-10-24T22:10:44.169163+00:00",
+  "design_sha256": "62fb66170ab8f9d29ca64cae01dcd00a7df3bcc80e977081eee80ab1fba35b6f",
+  "code_sha256": "dfe96985fe14e26c948c690890ea8fad8dfc0094398786e0cb98feefbb3e6458",
+  "definition_helper_sha256": "e897d211e9b1152b61df14dc0e069732526de848ec78dd564632b8dc87808e38",
+  "input_sha256": {
+    "data/original-private/original_panel.csv": "b6290b3629760ef272f75c95e78d1b9f4029e1d4dfd152617135def5a3152b23",
+    "data/processed/peng2022_panel_rawvalues.csv": "fac540da0d99b8dc057510b4864709be84f4e7a4fe4a9595e81776bad4902d8e",
+    "analysis/original-forecast/transparent_main/predictions.csv": "f5a63bc07903549acd418acc3d892520c45de675b52d8c2e9d39004eb72d3409",
+    "analysis/original-forecast/transparent_main/fit_records.json": "d411b1644d06fbab5784eb137b94c8b590bc6a46caf5bf4a1f82bebdf48131cb",
+    "analysis/original-listing-audit/origin_extreme_training_thresholds.csv": "8ac7f9fc397e5d5da2cc866970bbf002b63fe703621c7fffeefcb77bfe3e9a40",
+    "analysis/original-forecast/roe_missingness_audit.json": "9c10e0d0e1ca95b0368ef7b21651795641848a93cbbb00cfec6a7385a4656f49",
+    "analysis/original-forecast/accounting_line_identity_diagnostic/financial_profile_duplicate_counts.csv": "9b33396e1d4c756b00a7e7f67feeaa01c68d7ddaa382306ef2c858544b63bcd1"
+  },
+  "inputs_unchanged": true,
+  "unmatched_export_history": {
+    "unmatched_codes": 347,
+    "first_export_2010_n": 276,
+    "first_export_after_2010_n": 71,
+    "first_2010_and_last_2020_n": 257,
+    "last_export_2020_n": 325,
+    "listing_dates_known_in_available_reference": 0,
+    "meaning": "First and last exported year only; unmatched IPO dates and legal listing status remain unidentified."
+  },
+  "availability": {
+    "adjacent_known_nonfinancial_pairs": 28439,
+    "blank_roe_pairs": 404,
+    "unique_blank_roe_cells": 361,
+    "unknown_industry_source_rows": 1495,
+    "source_cell_audit_reused": true,
+    "reasons_for_blank_roe_or_unknown_industry": "Not established by these source fields; no equity rule or causal missingness inference."
+  },
+  "size_units": "Total assets in unchanged source currency units; distributions use positive finite assets.",
+  "implied_equity_definition": "(net_profit/total_assets)/(roe_pct/100), an implied average-equity/assets ratio under the checked ROE construction, not directly observed equity.",
+  "tail_definition": "Origin ROE strictly outside the saved evaluation-fold training q01/q99 thresholds; not target-conditioned.",
+  "identity_scope": "Source code/name mapping and exact financial-profile duplicates only; legal issuer and share-class identity not independently verified.",
+  "security_count_scope": "Codes may occur in different sign/year/provenance groups, so subgroup distinct-security counts need not sum.",
+  "distribution_scope": "All outputs are aggregate; no security-level observation or company-name lists."
+}

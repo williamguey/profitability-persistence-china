@@ -1,0 +1,88 @@
+{
+  "study": "Accounting Signals and Asymmetric Persistence in Forecasting Chinese Corporate Profitability",
+  "accounting_workbook_sha256": "759de2c9a3ecd6ab03f56b7ebc17ebf6d8b937d25bc9bb21bcb20b29273ee8ab",
+  "accounting_panel_sha256": "b6290b3629760ef272f75c95e78d1b9f4029e1d4dfd152617135def5a3152b23",
+  "public_workbook_sha256": "9cb04bd1d5ed44383d7e54351c8e8c7271797ccd74ecac3934e06302141dd75f",
+  "signal_sets": {
+    "transparent": {
+      "x1": "(current_assets-current_liabilities)/total_assets",
+      "x2": "share_capital/total_assets",
+      "x3": "operating_profit/total_assets",
+      "x4": "financial_expenses_total/total_assets",
+      "x5": "net_profit/total_assets",
+      "x6": "(non_operating_income-non_operating_expenses)/total_assets",
+      "x7": "income_tax_expense/total_assets",
+      "x8": "depreciation_fixed_assets/total_assets"
+    },
+    "legacy": {
+      "x1": "(current_assets-current_liabilities)/total_assets",
+      "x2": "(current_assets-current_liabilities-share_capital)/total_assets",
+      "x3": "(operating_profit-financial_expenses_total)/total_assets",
+      "x4": "non_operating_income/non_operating_expenses",
+      "x5": "net_profit/total_assets",
+      "x6": "EBIT/financial_expenses_positive",
+      "x7": "income_tax_expense/total_assets",
+      "x8": "depreciation_fixed_assets/total_assets"
+    }
+  },
+  "population": "Accounting: known nonfinancial industry at predictor year; require finite current and next-year ROE; exact consecutive code-year pairs. Public: first worksheet only, predictor year at or after listing year, observed current and next-year ROE.",
+  "units": "Accounting source ROE is decimal and multiplied by100. Public source ROE is already percent. Errors are percentage points; targets remain unmodified.",
+  "evaluation_target_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019
+  ],
+  "separate_target_year": 2020,
+  "training": "Expanding window of strictly earlier target years.",
+  "models": [
+    "historical mean",
+    "historical median",
+    "raw current ROE",
+    "OLS linear persistence",
+    "OLS sign-asymmetric persistence",
+    "OLS sign-asymmetric plus signals",
+    "LAD linear persistence",
+    "LAD sign-asymmetric persistence",
+    "LAD sign-asymmetric plus signals"
+  ],
+  "preprocessing": "Observed training predictor1st/99th-percentile clipping; accounting signals median-imputed from observed training values with nonconstant missingness indicators; raw-sign loss indicator; interaction uses clipped ROE; training centering/scaling and deterministic full-rank retention. Public three signals are observed on its eligible pairs.",
+  "primary_estimand": "MAE reduction of augmented LAD versus sign-asymmetric LAD on common evaluation rows.",
+  "bootstrap": {
+    "draws": 2000,
+    "seed": 20261025,
+    "unit": "security code, entire evaluation history",
+    "estimator": "paired observation-weighted MAE difference and relative reduction",
+    "interval": "percentile95%",
+    "scope": "conditional on fitted predictions and observed calendar years; no model refitting"
+  },
+  "sensitivities": [
+    "exclude000982 from scoring only",
+    "exclude000982 from training and scoring and refit",
+    "matched industry controls on accounting-panel fitted models",
+    "literal legacyeight ratio family"
+  ],
+  "scope": "Retrospective historical snapshots; no filing-date or revision-vintage verification. Company/year overlap means public panel is complementary evidence, not independent external validation.",
+  "post_analysis_diagnostics": {
+    "clipped_persistence": "Current ROE clipped at the existing training-fold bounds; no refitting.",
+    "listing_reference": "Both training and evaluation screened to matched valid public-reference dates and fiscal origin year >= listing year. Changes coverage and listing eligibility jointly; not a real-time availability or exchange-record audit.",
+    "origin_extremes": "Strictly outside each source/fold training-origin ROE 1st/99th percentiles; fixed forecasts and raw outcomes; equality inside.",
+    "four_cell_nesting": "Add linear LAD plus the existing signals, removing only the two sign columns from the saved augmented design. Six folds. Compare both orders and average marginal MAE gains using one joint four-cell loss-vector bootstrap. Descriptive allocations, not causal effects.",
+    "public_zeros": "Retain numerical zeros. Report exact counts and inspect original XLSX cell types; do not infer or recode a missing-value convention.",
+    "fixed_forecast_groups": "Original four-cell predictions stratified by origin sign and listing-reference provenance; original-source ROE/net-profit signs and available next-year profit transitions; export coverage only. No refitting or causal attribution.",
+    "public_sign_and_constructs": "Public four-cell predictions stratified by origin sign; exact stock-code/target-year matches compare different source ROE definitions descriptively, not as record validation."
+  },
+  "method_configurations": [
+    "config/listing-reference-sensitivity.txt",
+    "config/listing-and-origin-extreme.txt",
+    "config/original-nesting-order.txt",
+    "config/public-factorial.txt",
+    "config/original-fixed-decomposition.txt",
+    "config/public-sign-constructs.txt"
+  ],
+  "subgroup_bootstrap_scopes": {
+    "original_fixed_groups": "2,000 seed-20261025 paired security-history draws within each group, joint over four models; weighted pooled contributions are point estimates only.",
+    "public_sign_contributions": "2,000 seed-20261025 security-history draws over the entire public sample, joint over both sign groups and four models, preserving covariance for contribution intervals."
+  }
+}

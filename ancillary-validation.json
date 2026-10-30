@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "scope": "Assembly and independent schema/path/integrity checks of the ancillary package; no model estimation, source-data access, bootstrap generation or new scientific diagnostics.",
+  "base_audit": "All 175 hashes in the original 176-file audited base manifest verified.",
+  "current_files_before_validation_file": 195,
+  "current_csv_schema_count": 111,
+  "current_python_script_count": 32,
+  "current_json_count_before_validation_file": 20,
+  "unchanged_base_aggregate_file_count": 114,
+  "all_base_aggregate_files_byte_identical": true,
+  "all_ten_figure_input_data_files_byte_identical": true,
+  "figure_provenance_changes": "Removed internal review/manuscript routing, distinguished historical source checks, and mapped package output paths; no numerical figure metadata changed.",
+  "figures": {
+    "accounting-relationships": {
+      "png_byte_identical_to_source_illustration": true,
+      "vector_pdf_without_incomplete_author_metadata": true
+    },
+    "annual-gains": {
+      "png_byte_identical_to_source_illustration": true,
+      "vector_pdf_without_incomplete_author_metadata": true
+    },
+    "gain-decomposition": {
+      "png_byte_identical_to_source_illustration": true,
+      "vector_pdf_without_incomplete_author_metadata": true
+    },
+    "persistence-shape": {
+      "png_byte_identical_to_source_illustration": true,
+      "vector_pdf_without_incomplete_author_metadata": true
+    },
+    "signal-distributions": {
+      "png_byte_identical_to_source_illustration": true,
+      "vector_pdf_without_incomplete_author_metadata": true
+    }
+  },
+  "privacy": {
+    "symlinks": 0,
+    "prohibited_files": 0,
+    "host_specific_paths": 0,
+    "credential_patterns": 0,
+    "record_identifier_tables": "Only six cited public annual-report cases; no new identifier-bearing table.",
+    "function_grid": "10,040 deterministic saved-function evaluations, not company-level predictions.",
+    "display_bins": "2,053 hexagon cells, 20 median bins, 280 histogram bins, 8 signal summaries, 6 annual metric rows, 4 aggregate contrast rows, 10 aggregate coefficient rows."
+  },
+  "offline_builder_boundary": "code/build_paper_tables.py derives ROOT from its own package directory; all writes target ROOT/output/paper-assets. No manuscript paths or writes.",
+  "tex_exclusion": "The five generated TeX files from the base bundle are omitted. Scripts can recreate them locally.",
+  "historical_validation": "The former package-validation.json is preserved byte-for-byte as base-package-validation.json.",
+  "verification_limits": "Fresh dependency download/installation and full source-data re-estimation were not run; the tested existing Python environment was used for offline figures.",
+  "new_files_before_current_audit": [
+    "base-package-validation.json",
+    "code/plot_loop1_illustrated.py",
+    "code/prepare_illustrated_figure_data.py",
+    "figure-data/accounting-relationships-display.json",
+    "figure-data/accounting-relationships-hexbin-counts.csv",
+    "figure-data/accounting-relationships-median-bins.csv",
+    "figure-data/annual-gains-saved-metrics.csv",
+    "figure-data/figure-provenance-manifest.json",
+    "figure-data/gain-decomposition-saved-contrasts.csv",
+    "figure-data/persistence-shape-function-grid.csv",
+    "figure-data/persistence-shape-reconstruction-check.json",
+    "figure-data/persistence-shape-saved-coefficients.csv",
+    "figure-data/signal-distributions-histogram-bins.csv",
+    "figure-data/signal-distributions-quantiles.csv",
+    "output/illustrated-figures/accounting-relationships.pdf",
+    "output/illustrated-figures/accounting-relationships.png",
+    "output/illustrated-figures/annual-gains.pdf",
+    "output/illustrated-figures/annual-gains.png",
+    "output/illustrated-figures/gain-decomposition.pdf",
+    "output/illustrated-figures/gain-decomposition.png",
+    "output/illustrated-figures/persistence-shape.pdf",
+    "output/illustrated-figures/persistence-shape.png",
+    "output/illustrated-figures/render-manifest.json",
+    "output/illustrated-figures/signal-distributions.pdf",
+    "output/illustrated-figures/signal-distributions.png"
+  ],
+  "base_files_changed": [
+    "requirements.txt",
+    "README.md",
+    "config/source-checksums.json",
+    "config/environment.json"
+  ],
+  "base_files_excluded_or_renamed": [
+    "package-validation.json",
+    "output/paper-assets/contrasts-table.tex",
+    "output/paper-assets/sensitivity-table.tex",
+    "output/paper-assets/main-table.tex",
+    "output/paper-assets/sample-table.tex",
+    "output/paper-assets/annual-table.tex"
+  ]
+}
